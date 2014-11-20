@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'pry-rails'
 gem 'handlebars_assets'
+gem 'simple_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -46,3 +47,5 @@ gem "launchy"
 gem "guard-rspec"
 gem "rb-fsevent"
 gem "factory_girl_rails"
+gem 'better_errors'
+gem 'pry-byebug'
