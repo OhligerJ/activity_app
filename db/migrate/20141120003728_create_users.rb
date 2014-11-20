@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.text :description
       t.string :password
       t.string :password_digest
+      t.string :reset_token
 
       t.timestamps
     end
