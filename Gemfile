@@ -41,11 +41,14 @@ gem 'bcrypt', '~> 3.1.7'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem "rspec-rails"
-gem "capybara"
-gem "launchy"
-gem "guard-rspec"
-gem "rb-fsevent"
-gem "factory_girl_rails"
-gem 'better_errors'
-gem 'pry-byebug'
+group :test, :development do
+	gem 'shoulda-matchers'
+	gem "rspec-rails"
+	gem "capybara"
+	gem "launchy"
+	gem "guard-rspec"
+	gem "rb-fsevent"
+	gem "factory_girl_rails"
+	gem 'better_errors'
+	gem 'pry-byebug'
+end
