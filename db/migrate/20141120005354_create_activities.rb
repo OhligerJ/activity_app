@@ -9,6 +9,7 @@ class CreateActivities < ActiveRecord::Migration
       t.string :api_url
       t.float :star_rating
       t.integer :user_id
+      t.string :img_url
 
       t.timestamps
     end
