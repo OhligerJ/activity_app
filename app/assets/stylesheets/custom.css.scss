@@ -1,0 +1,48 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+*{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.center {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+
+}
+
+.formpic {
+	position: relative;
+	background-image: url(fourcanoes.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	top: 0;
+}
+
+// .signup-box {
+// 	position: fixed;
+// 	top: 100px;
+// 	left: 30%;
+// 	width: 400px;
+// 	height: 220px;
+// 	background-color: rgba(0,0,0,.5);
+
+// }
+.signuplog-form {
+	position: relative;
+	top: 120px;
+}
+.signuplog-form a {
+	color: white;
+}
+.btn {
+	background-color: rgba(0,0,0,.01);
+	color: white;
+	border: 1px solid white;
+}
+.btn:hover {
+	color: white;
+	background-color: rgba(0,0,0,.1)
+}
