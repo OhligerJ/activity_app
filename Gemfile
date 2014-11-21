@@ -53,4 +53,5 @@ group :test, :development do
 	gem "factory_girl_rails"
 	gem 'better_errors'
 	gem 'pry-byebug'
+	gem 'ffaker'
 end
