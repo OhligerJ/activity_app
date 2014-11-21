@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20141120011743) do
     t.string   "api_url"
     t.float    "star_rating"
     t.integer  "user_id"
+    t.string   "img_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
