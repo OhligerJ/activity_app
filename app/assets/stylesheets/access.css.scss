@@ -37,20 +37,33 @@
 // 	height: 220px;
 // 	background-color: transparent
 // }
+
 .signuplog-form {
 	position: relative;
-	top: 140px;
+	top: 130px;
 }
 .signuplog-form a {
 	color: white;
+	font-size: 16px;
+}
+
+.signuplog-form a:hover {
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+
 }
 .btn-clear {
 	background-color: rgba(0,0,0,.01);
 	color: white;
 	border: 1px solid white;
+	-webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+  border-radius: 1px;
 	font-size: 16px;
+	padding: 5px 9px 5px 9px;
+	margin-top: 10px;
 }
 .btn-clear:hover {
 	color: white;
-	background-color: rgba(0,0,0,.1)
+	background-color: rgba(0,0,0,.2)
 }
