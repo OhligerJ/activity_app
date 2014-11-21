@@ -1,2 +1,28 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="wrapper">
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+		    <ul>
+		        <% for activity in @activity_list %>
+		        	<li>
+					<% if activity.title != nil %>
+						<div class="title"><%= activity.title %></div>
+					<% end %>
+					<% if activity.description != nil %>
+						<div class="description"><%= activity.description %></div>
+					<% end %>
+				
+					</li>
+		        <% end %>
+		    </ul>
+		</div>
+
+		<!-- Prev/next controls -->
+		<a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
+		<a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
+
+		<!-- Pagination -->
+		<p class="jcarousel-pagination">
+		    <!-- Pagination items will be generated in here -->
+		</p>
+	</div>	
+</div>
