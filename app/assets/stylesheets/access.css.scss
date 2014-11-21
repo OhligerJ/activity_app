@@ -1,3 +1,53 @@
 // Place all the styles related to the Access controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// *{
+// 	font-family: 'Quicksand', sans-serif;
+// }
+
+.center {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+
+}
+
+.formpic {
+	position: relative;
+	background-image: url(fourcanoes.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	top: 0;
+}
+
+// .signup-box {
+// 	position: fixed;
+// 	top: 100px;
+// 	left: 30%;
+// 	width: 400px;
+// 	height: 220px;
+// 	background-color: transparent
+// }
+.signuplog-form {
+	position: relative;
+	top: 140px;
+}
+.signuplog-form a {
+	color: white;
+}
+.btn {
+	background-color: rgba(0,0,0,.01);
+	color: white;
+	border: 1px solid white;
+	font-size: 16px;
+}
+.btn:hover {
+	color: white;
+	background-color: rgba(0,0,0,.1)
+}

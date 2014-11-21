@@ -1,14 +1,16 @@
-<div class="wrapper">
+<div class="jcarousel-page-wrapper">
 	<div class="jcarousel-wrapper">
 		<div class="jcarousel">
 		    <ul>
 		        <% for activity in @activity_list %>
 		        	<li>
 					<% if activity.title != nil %>
-						<div class="title"><%= activity.title %></div>
+						<div class="title"><%= activity.title %>
+						<h1>Test</h1>
+						</div>
 					<% end %>
 					<% if activity.description != nil %>
-						<div class="description"><%= activity.description %></div>
+						<div class="description">Test<%= activity.description %></div>
 					<% end %>
 				
 					</li>
@@ -17,8 +19,8 @@
 		</div>
 
 		<!-- Prev/next controls -->
-		<a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
-		<a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
+		<a href="#" class="control-prev">&lsaquo; </a>
+		<a href="#" class="control-next"> &rsaquo;</a>
 
 		<!-- Pagination -->
 		<p class="jcarousel-pagination">

@@ -2,27 +2,26 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 @import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
 
 body {
-    background: #F0EFE7;
     margin: 0;
     padding: 0;
-    color: #4E443C;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    background-color: rgba(0,0,0,.2);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
   font-weight: normal;
   text-rendering: optimizelegibility;
 }
 
 h1 {
-    color: #4E443C;
+    color: black;
     font-size: 36px;
     font-weight: bold;
 }
@@ -35,111 +34,113 @@ h3, h3 a {
   color: #0388A6;
 }
 
-pre {
-  border:1px solid #000;
-  overflow-x:auto;
-  background: #222;
-  color: #fff;
-  text-shadow: none;
-}
+// pre {
+//   border:1px solid #000;
+//   overflow-x:auto;
+//   background: #222;
+//   color: #fff;
+//   text-shadow: none;
+// }
 
-.wrapper {
-    max-width: 620px;
-    padding: 0 20px 40px 20px;
+.jcarousel-page-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px  10px 10px;
     margin: auto;
 }
 
 
 .jcarousel-wrapper {
-    margin: 20px auto;
+    margin: 10px auto;
     position: relative;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+    // border: 1px solid rgba(0,0,0,.2);
+    // -webkit-border-radius: 1px;
+    //    -moz-border-radius: 1px;
+    //         border-radius: 1px;
+    // -webkit-box-shadow: 0 0 2px #999;
+    //    -moz-box-shadow: 0 0 2px #999;
+    //         box-shadow: 0 0 2px #999;
 }
 
 
-.jcarousel-wrapper .photo-credits {
-    position: absolute;
-    right: 15px;
-    bottom: 0;
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
-    opacity: .66;
-}
+// .jcarousel-wrapper .photo-credits {
+//     position: absolute;
+//     right: 15px;
+//     bottom: 0;
+//     font-size: 13px;
+//     color: #fff;
+//     text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+//     opacity: .66;
+// }
 
-.jcarousel-wrapper .photo-credits a {
-    color: #fff;
-}
+// .jcarousel-wrapper .photo-credits a {
+//     color: #fff;
+// }
 
 /** Carousel **/
 
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 700px;
 }
 
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+// .jcarousel ul {
+//     width: 100%;
+//     position: relative;
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+// }
 
-.jcarousel li {
-    float: left;
-    width:590px;
-    padding: 5px;
-}
+// .jcarousel li {
+//     float: left;
+//     width: 50px;
+//     padding: 5px;
+// }
 
 /** Carousel Controls **/
 
-.jcarousel-control-prev,
-.jcarousel-control-next {
+.control-prev,
+.control-next {
     position: absolute;
-    top: 200px;
+    top: 40%;
+    // bottom: 150%;
     width: 30px;
     height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
+    // text-align: center;
+    background: transparent;
+    color: rgba(0,0,0,.6);
     text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
+    font: 100px 'Quicksand', sans-serif;
+    // -webkit-border-radius: 30px;
+    //    -moz-border-radius: 30px;
+    //         border-radius: 30px;
+    // -webkit-box-shadow: 0 0 2px #999;
+    //    -moz-box-shadow: 0 0 2px #999;
+    //         box-shadow: 0 0 2px #999;
 }
 
-.jcarousel-control-prev {
-    left: -50px;
+.control-prev {
+    left: -10px;
 }
 
-.jcarousel-control-next {
-    right: -50px;
+.control-next {
+    right: -10px;
 }
 
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-    display: block;
+.control-prev:hover span,
+.control-next:hover span {
+    color: rgba (0,0,0,.8);
+    text-decoration: none;
 }
 
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
-    opacity: .5;
-    cursor: default;
-}
+// .control-prev.inactive,
+// .control-next.inactive {
+//     opacity: .5;
+
+// }
 
 /** Carousel Pagination **/
 
@@ -168,10 +169,10 @@ pre {
     opacity: .75;
 }
 
-.jcarousel-pagination a.active {
-    background: #4E443C;
-    color: #fff;
-    opacity: 1;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-}
+// .jcarousel-pagination a.active {
+//     background: #4E443C;
+//     color: #fff;
+//     opacity: 1;
+//     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+// }
 
