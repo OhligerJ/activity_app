@@ -19,6 +19,6 @@ class Activity < ActiveRecord::Base
   private
 
   def self.fun_activities time
-  	 where('time_min <= #{time}').where("time_max IS NULL OR time_max >= #{time}")
+  	 where("time_min <= " + time.to_s).where("time_max IS NULL OR time_max >= " + time.to_s)
   end
 end
