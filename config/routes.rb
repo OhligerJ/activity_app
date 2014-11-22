@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'users/profile'
+
+  get 'activities/new'
+
+  get 'activities/index'
+
   root 'home#index'
   get 'home/index'
 
@@ -28,6 +34,6 @@ Rails.application.routes.draw do
     resources :activities
   end
 
-  resources :activites
+  resources :activities
   
 end
