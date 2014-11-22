@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root 'home#index'
+  get 'home/index'
+
   get 'access/forgot_password'
 
   get 'login', to: "access#login", as: 'login'
@@ -13,13 +17,17 @@ Rails.application.routes.draw do
 
   get 'logout', to: "access#logout"
 
-  get '/forgot' => 'access#forgot_password'
-  post '/send_reset' => 'access#send_reset'
-  get '/reset/:token' => 'access#reset_password'
-  post '/update_password' => 'access#update_password'
+  get 'forgot', to: 'access#forgot_password'
+  post 'send_reset', to: 'access#send_reset'
+  get 'reset/:token', to: 'access#reset_password'
+  post 'update_password', to: 'access#update_password'
 
-  root 'home#index'
-  get 'home/index'
 
+
+  resources :users do
+    resources :activities
+  end
+
+  resources :activities
   
 end
