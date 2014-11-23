@@ -94,7 +94,7 @@ class AccessController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:username, :password, :password_digest)
+    params.require(:user).permit(:username, :password, :password_digest, :location, :description)
   end
 
   def confirm_logged_in
