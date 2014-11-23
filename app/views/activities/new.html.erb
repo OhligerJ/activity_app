@@ -1,2 +1,41 @@
 <h1>Activities#new</h1>
 <p>Find me in app/views/activities/new.html.erb</p>
+
+<%= form_for(@new_activity, url: user_activities_path) do |f|%>
+	<div>
+	  <%= f.label(:title, class: "control-label") %>
+	  <%= f.text_field(:title, autofocus: true, class: "form-control") %>
+	</div>
+
+	<div>
+	  <%= f.label(:location, class: "control-label") %>
+	  <%= f.text_field(:location, autofocus: true, class: "form-control") %>
+	</div>
+
+	<div>
+	  <%= f.label(:time_min, class: "control-label") %>
+	  <%= f.text_field(:time_min, autofocus: true, class: "form-control") %>
+	</div>
+
+	<div>
+	  <%= f.label(:time_max, class: "control-label") %>
+	  <%= f.text_field(:time_max, autofocus: true, class: "form-control") %>
+	</div>
+
+	<div>
+	  <%= f.label(:description, class: "control-label") %>
+	  <%= f.text_field(:description, autofocus: true, class: "form-control") %>
+	</div>
+
+	<div>
+	  <%= f.label(:api_url,  class: "control-label") %>
+	  <%= f.uploadcare_field :api_url, class: "form-control" %>
+	</div>
+
+	<div>
+	  <%= f.label(:star_rating,  class: "control-label") %>
+	  <%= f.text_field(:star_rating,  class: "form-control") %>
+	</div>
+
+	<%= f.submit("Add a new activity!", class: "btn btn-lg btn-info") %>
+<% end %>
