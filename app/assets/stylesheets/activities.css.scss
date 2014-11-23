@@ -173,9 +173,21 @@ h3, h3 a {
     opacity: .75;
 }
 
-// .jcarousel-pagination a.active {
-//     background: #4E443C;
-//     color: #fff;
-//     opacity: 1;
-//     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
-// }
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.act-brochure {
+	margin: 40px;
+	background-color: (255,255,255,.8)
+}
+
+.act-dec {
+	text-align: center;
+}
+
+
+

@@ -1,30 +1,48 @@
 <div class="wrapper">
 	<div class="jcarousel-wrapper">
-		<div class="jcarousel">
+		<% for activity in @activity_list %>
+		  <div class="jcarousel">
+		  <div class="act-item">
 		    <ul>
-		        <% for activity in @activity_list %>
-		        	
-		        	<li>
-					<% if activity.title != nil %>
-						<div class="title"><%= activity.title %></div>
-					<% end %>
-					<% if activity.description != nil %>
-						<div class="description"><%= activity.description %></div>
-					<% end %>
-					<% if activity.location != nil %>
-						<div class="location"><%= activity.location %></div>
-					<% end %>
+		      <li class= "list-unstyled">
+		      <div class="act-img col-md-7">
+		      	<% if activity.img_url != nil %>
+							<!-- <div class="img"> --><img url('images/couple_canoe.jpg')>
+							<!-- <%= activity.img_url %>> --> </div>
+					</div>
+						<% end %>
+		      </div>
 
-					<% if activity.time_min != nil and activity.time_max != nil %>
-						<div class="time">Time Span: <%= activity.time_min %> minutes to <%= activity.time_max %> minutes. </div>
+		      <div class="act-brochure col-md-4">
+		      	<p class="act-title">
+						<% if activity.title != nil %>
+							<%= activity.title %>
+						<% end %>
+						</p>
+						<p class ="act-location">
+						<% if activity.location != nil %>
+							<%= activity.location %>
+						<% end %>
+						</p>
+						<p class="act-desc">
+						<% if activity.description != nil %>
+							<%= activity.description %>
+						<% end %>
+						</p>
+						<p class="act-time">
+						<% if activity.time_min != nil and activity.time_max != nil %>
+						<div class="time">Duration: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
 					<% else %>
 						<div class="time">Time: <%= activity_list.time_min %></div>
 					<% end %>
+					</p>
 
+					</div>
 					</li>
-		        <% end %>
-		    </ul>
-		</div>
+
+				</ul>
+			</div>
+			</div>
 
 		<!-- Prev/next controls -->
 		<a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
@@ -34,5 +52,8 @@
 		<p class="jcarousel-pagination">
 		    <!-- Pagination items will be generated in here -->
 		</p>
+		<% end %>
+
+
 	</div>	
 </div>
