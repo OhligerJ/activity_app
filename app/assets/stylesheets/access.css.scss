@@ -1,3 +1,78 @@
 // Place all the styles related to the Access controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// @font-face '//fonts.googleapis.com/css?family=Quicksand:300,700' rel='stylesheet'
+
+// *{
+// 	font-family: 'Quicksand', sans-serif;
+// }
+
+.center {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+
+}
+
+label {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+}
+
+.formpic {
+	position: absolute;
+	background-image: url(fourcanoes.jpg);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	top: 0;
+	width:100%;
+	height:800px;
+}
+
+// .signup-box {
+// 	position: fixed;
+// 	top: 100px;
+// 	left: 30%;
+// 	width: 400px;
+// 	height: 220px;
+// 	background-color: transparent
+// }
+
+.signuplog-form {
+	position: relative;
+	top: 130px;
+}
+.signuplog-form a {
+	color: white;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.signuplog-form a:hover {
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+
+}
+.btn-clear {
+	background-color: rgba(0,0,0,.01);
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	border: 1px solid white;
+	-webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+  border-radius: 1px;
+	font-size: 16px;
+	padding: 5px 9px 5px 9px;
+	margin-top: 10px;
+}
+.btn-clear:hover {
+	color: white;
+	background-color: rgba(0,0,0,.2)
+}

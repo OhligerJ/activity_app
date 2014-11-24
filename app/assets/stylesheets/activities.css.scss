@@ -1,3 +1,224 @@
-// Place all the styles related to the activities controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// body {
+//     background: #F0EFE7;
+//     margin: 0;
+//     padding: 0;
+//     font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//     color: #4E443C;
+//     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+// }
+
+    // h1, h2, h3, h4, h5, h6 {
+    //   font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    //   text-align: center;
+    //   font-weight: normal;
+    //   text-rendering: optimizelegibility;
+    // }
+
+    // h1 {
+    //     color: #4E443C;
+    //     font-size: 36px;
+    //     font-weight: bold;
+    // }
+
+    // h2, h2 a {
+    //     color: #F14E32;
+    // }
+
+    // h3, h3 a {
+    //   color: #0388A6;
+    // }
+
+    // a {
+    //   color: #0388A6;
+    // }
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 1000px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+
+.jcarousel-wrapper {
+    // margin: 20px auto;
+    position: relative;
+    border: 1px solid #fff;
+    -webkit-border-radius: 1px;
+       -moz-border-radius: 1px;
+            border-radius: 1px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    width:1000px;
+    padding: 5px;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    // background: #4E443C;
+    color: black;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 64px/67px 'Quicksand', sans-serif;
+
+}
+
+.jcarousel-control-prev {
+    left: -50px;
+}
+
+.jcarousel-control-next {
+    right: -50px;
+}
+
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    color: black;
+    border: none
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+    color: transparent;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 9px;
+    line-height: 10px;
+    min-width: 14px;
+    
+    background: #fff;
+    color: rgba(0,0,0,.8);
+    border-radius: 14px;
+    padding: 2px;
+    text-align: center;
+    
+    margin-right: 2px;
+    
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.jcarousel-pagination a.active:hover {
+    text-decoration: none;
+}
+
+.act-img{
+    position: relative;
+    width: 66%;
+    float: left;
+}
+.act-desc {
+    position: relative;
+    width: 33%;
+    background-color: rgba(0,0,0,.1);
+    font-family: 'Quicksand', sans-serif;
+    padding: 25px;
+    margin-left: 60%;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+}
+.location {
+    text-align: center;
+    font-size: 14px;
+}
+.description {
+    text-align: justify;
+    font-size: 14px;
+}
+.time {
+    text-align: center;
+}
+.favorite-buttons{
+    width:10px;
+    background-image: url(fourcanoes.jpg);
+}
+// .twitter-share-button {
+//     background-image: url(1416829212_43-twitter-128.png)
+// }
+

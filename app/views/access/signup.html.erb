@@ -1,32 +1,42 @@
-<h1>Signup</h1>
 
-<% if @user.errors.any? %>
-  <% @user.errors.full_messages.each do |error| %>
-    <p class = "text-danger"><%= error %></p>
-  <% end %>
-<% end %>
+<!-- <p class="center-title">Signup</p> -->
+<div class="formpic">
 
-<%= form_for(@user, url: signup_path) do |f|%>
+	<%= render 'layouts/header' %>
+	<div class="signup-box">
+		<div class="signuplog-form">
+			<% if @user.errors.any? %>
+  		<% @user.errors.full_messages.each do |error| %>
+    		<p class = "text-danger"><%= error %></p>
+  		<% end %>
+		<% end %>
 
-<p>
-  <%= f.label(:username) %>
-  <%= f.text_field(:username, autofocus: true) %>
-</p>
-<p>
-  <%= f.label(:password) %>
-  <%= f.password_field(:password) %>
-</p>
-<p>
-  <%= f.label(:location) %>
-  <%= f.text_field(:location) %>
-</p>
-<p>
-  <%= f.label(:description) %>
-  <%= f.text_area(:description) %>
-</p>
-<p>
-  <%= f.submit("Signup", class: "btn btn-primary") %>
-</p>
-  <%= link_to "Have an account already? Log in here", login_path %>
-<% end %>
+		<%= form_for(@user, url: signup_path) do |f|%>
+
+		<p class="center">
+  		<%= f.label(:username) %>
+  		<%= f.text_field(:username, autofocus: true) %>
+		</p>
+		<p class="center">
+  		<%= f.label(:password) %>
+  		<%= f.password_field(:password) %>
+		</p>
+		<p class="center">
+  		<%= f.label(:location) %>
+  		<%= f.text_field(:location) %>
+		</p>
+		<p class="center">
+  	<%= f.label(:description) %>
+  	<%= f.text_area(:description) %>
+		</p>
+		<p class="center">
+  		<%= f.submit("Sign up", class: "btn-clear") %>
+		</p>
+		<p class="center">
+  		<%= link_to "Already have an account?", login_path %>
+  	</p>
+		<% end %>
+	</div>
+</div>
+</div>
 

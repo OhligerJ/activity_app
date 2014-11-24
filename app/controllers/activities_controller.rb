@@ -22,9 +22,23 @@ class ActivitiesController < ApplicationController
   	redirect_to :back
   end
 
+  def favorite
+    type = params[:type]
+    if type == "favorite"
+      @current_user.favorites << @activity
+      redirect_to :back, notice: 'You favorited #{@activity.title}'
+    else
+      # Type missing, nothing happens
+      redirect_to :back, notice: 'Nothing happened.'
+    end
+  end
+
+
+
   def show
   	@activity = Activity.find params[:id]
   end
+
 
 
 
