@@ -4,15 +4,23 @@
 
 			<div>
 			<div id= "header" class="page-container bored-header clearfix shift-with-hiw">
-					<a href="/" class="header-logo pull-left"><img src="/assets/clock2.png"></a>
+				<a href="/" class="header-logo pull-left"><img src="/assets/clock2.png"></a>
+				
 				<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
+					<% if session[:user_id] == nil %>
 					<li id="sign_up" class="pull-left medium-right-margin"> 
 						<a href="/signup">Sign Up</a>
 					</li>
 					<li id="login" class="pull-left"> 
 						<a href="/login">Login</a>
 					</li>
+					<% else %>
+					<li id="login" class="pull-left"> 
+						<a href="/logout">Logout</a>
+					</li>
+				<% end %>
 				</ul>
+				
 			</div>
 		</div>
 <!-- 	</div> -->

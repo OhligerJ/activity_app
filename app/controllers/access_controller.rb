@@ -62,6 +62,7 @@ class AccessController < ApplicationController
     if params[:username].present? && params[:password].present?
       found_user = User.where(username: params[:username]).first
       if found_user
+        binding.pry
         authorized_user = found_user.authenticate(params[:password])
       end
     end
@@ -89,7 +90,7 @@ class AccessController < ApplicationController
   def logout
     session[:user_id] = nil
     flash[:notice] = "Logged out"
-    redirect_to login_path
+    redirect_to home_path
   end
 
   private

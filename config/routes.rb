@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'activities/index'
 
   root 'home#index'
-  get 'home/index'
+  get 'home/index', as: 'home'
 
   get 'access/forgot_password'
 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   post 'signup', to: "access#create"
 
-  get 'home', to: "access#home", as: 'home'
+  get 'home', to: "access#home"
 
   get 'logout', to: "access#logout"
 

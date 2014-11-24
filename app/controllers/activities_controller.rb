@@ -9,13 +9,23 @@ class ActivitiesController < ApplicationController
   end
 
   def index
-  	@activity_list = Activity.fun_activities_with_user 100
+    if !params["days"]
+      params["days"] = 0
+    end
+    if !params["hours"]
+      params["hours"] = 0
+    end
+    if !params["minutes"]
+      params["minutes"] = 0
+    end
+  	@activity_list = Activity.fun_activities_with_user(Activity.convert_to_minutes(params["days"], params["hours"], params["minutes"]))
   end
 
   def create
   	if session[:user_id] 
 	  	@current_user = User.find session[:user_id] 
 			@current_user.activities.create(activity_params)
+      redirect_to home_path
 		else
 			redirect_to '/login'
 		end

@@ -2,15 +2,8 @@
 	<div class="jcarousel-wrapper">
 		<div class="jcarousel">
 		    <ul>
-		      <% for activity in @activity_list %>
-		        	
+		      <% for activity in @activity_list %>	
 		      <li>
-		      		<div class="activity_individual">
-		      			
-		      		</div>
-<!-- 		       <% if activity.img_url != nil %>
-						<div class="act-img"><%= activity.img_url %></div>
-					<% end %> -->
 					<% if activity.title != nil %>
 					<div class="act-desc col-3">
 						<div class="title"><%= activity.title %></div>
