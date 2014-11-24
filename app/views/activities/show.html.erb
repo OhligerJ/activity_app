@@ -38,6 +38,11 @@ var x = document.getElementById("demo");
 var origin1; // = new google.maps.LatLng(37.751578, -122.447838);
 var destinationA = "<%= @activity.location %>";
 
+// var destinations = [];
+// "<!--%= @filtered_activities_by_time.each do |a| %-->"
+//   destinations.push("<!--%= a.location %-->");
+// <!--% end %-->
+
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -86,7 +91,7 @@ function showPosition(position) {
       var results = response.rows[0].elements;
       console.log(results);
       console.log(results[0].distance.text);
-      console.log(results[0].duration.text);
+      console.log(results[0].distance.text);
 
       outputDiv.innerHTML += 'origin: ' + origins[0] + 
                   '<br>destination: ' + destinations[0] + 
