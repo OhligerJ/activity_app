@@ -15,6 +15,22 @@ class ActivitiesController < ApplicationController
   	redirect_to :back
   end
 
+  def favorite
+    type = params[:type]
+    if type == "favorite"
+      @current_user.favorites << @activity
+      redirect_to :back, notice: 'You favorited #{@activity.title}'
+
+    elsif type == "unfavorite"
+      @current_user.favorites.delete(@activity)
+      redirect_to :back, notice: 'Unfavorited #{@activity.name}'
+
+    else
+      # Type missing, nothing happens
+      redirect_to :back, notice: 'Nothing happened.'
+    end
+  end
+
 
 
 

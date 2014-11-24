@@ -1,59 +1,63 @@
 <div class="wrapper">
 	<div class="jcarousel-wrapper">
-		<% for activity in @activity_list %>
-		  <div class="jcarousel">
-		  <div class="act-item">
+		<div class="jcarousel">
 		    <ul>
-		      <li class= "list-unstyled">
-		      <div class="act-img col-md-7">
-		      	<% if activity.img_url != nil %>
-							<!-- <div class="img"> --><img url('images/couple_canoe.jpg')>
-							<!-- <%= activity.img_url %>> --> </div>
-					</div>
-						<% end %>
-		      </div>
+		      <% for activity in @activity_list %>
+		        	
+		      <li>
+<!-- 		       <% if activity.img_url != nil %>
+						<div class="act-img"><%= activity.img_url %></div>
+					<% end %> -->
+					<% if activity.title != nil %>
+					<div class="act-desc col-3">
+						<div class="title"><%= activity.title %></div>
+					<% end %>
 
-		      <div class="act-brochure col-md-4">
-		      	<p class="act-title">
-						<% if activity.title != nil %>
-							<%= activity.title %>
-						<% end %>
-						</p>
-						<p class ="act-location">
-						<% if activity.location != nil %>
-							<%= activity.location %>
-						<% end %>
-						</p>
-						<p class="act-desc">
-						<% if activity.description != nil %>
-							<%= activity.description %>
-						<% end %>
-						</p>
-						<p class="act-time">
-						<% if activity.time_min != nil and activity.time_max != nil %>
-						<div class="time">Duration: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
+					<% if activity.location != nil %>
+						<div class="location"><%= activity.location %></div>
+					<% end %>
+					<br>
+
+					<% if activity.description != nil %>
+						<div class="description"><%= activity.description %></div>
+					<% end %>
+					<br>
+
+					<% if activity.time_min != nil and activity.time_max != nil %>
+						<div class="time">Estimated Time: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
 					<% else %>
 						<div class="time">Time: <%= activity_list.time_min %></div>
 					<% end %>
-					</p>
+					<br>
+
+					<div class="social-buttons">
+					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+					
+				<div class="favorite-button"> Fave
+					<% if @current_user %>
+  				<% link_to "favorite",   favorite_activity_path(@activity, type: "favorite"), method: :put %>
+  				<% link_to "unfavorite", favorite_activity_path(@activity, type: "unfavorite"), method: :put %>
+					<% end %>
 
 					</div>
-					</li>
+					</div>
 
-				</ul>
-			</div>
-			</div>
+					</div>
+
+					</li>
+		        <% end %>
+		    </ul>
+		</div>
 
 		<!-- Prev/next controls -->
-		<a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
-		<a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
+		<a href="#" class="jcarousel-control-prev">&lsaquo; </a>
+		<a href="#" class="jcarousel-control-next"> &rsaquo;</a>
 
 		<!-- Pagination -->
 		<p class="jcarousel-pagination">
 		    <!-- Pagination items will be generated in here -->
 		</p>
-		<% end %>
-
-
 	</div>	
 </div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
