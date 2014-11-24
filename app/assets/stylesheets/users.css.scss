@@ -3,3 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+label {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+}

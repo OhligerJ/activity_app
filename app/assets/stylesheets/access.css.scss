@@ -5,6 +5,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// @font-face '//fonts.googleapis.com/css?family=Quicksand:300,700' rel='stylesheet'
+
 // *{
 // 	font-family: 'Quicksand', sans-serif;
 // }
@@ -15,6 +17,11 @@
 	font-size: 18px;
 	color: white;
 
+}
+
+label {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
 }
 
 .formpic {
@@ -45,6 +52,7 @@
 .signuplog-form a {
 	color: white;
 	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .signuplog-form a:hover {
@@ -54,6 +62,7 @@
 }
 .btn-clear {
 	background-color: rgba(0,0,0,.01);
+	font-family: 'Quicksand', sans-serif;
 	color: white;
 	border: 1px solid white;
 	-webkit-border-radius: 1px;

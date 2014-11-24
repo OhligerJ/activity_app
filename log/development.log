@@ -46056,3 +46056,3992 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-23 22:51:08
 
 
 Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-23 22:51:09 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:15:37 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (47.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (116.7ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (211.3ms)
+Completed 200 OK in 23633ms (Views: 21698.6ms | ActiveRecord: 164.5ms)
+
+
+Started GET "/aignup" for 127.0.0.1 at 2014-11-24 09:18:08 -0800
+
+ActionController::RoutingError (No route matches [GET] "/aignup"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (150.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (499.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:18:14 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered access/signup.html.erb within layouts/application (550.8ms)
+Completed 200 OK in 861ms (Views: 818.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:15 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:18:16 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:18:17 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:19:05 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered access/signup.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 550ms (Views: 541.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:19:06 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:19:07 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:20:47 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 334ms (Views: 332.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:47 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:20:48 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 123ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:20:59 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 145ms (Views: 144.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:02 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:21:03 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:21:05 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered access/signup.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 191ms (Views: 189.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:21:06 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:23:30 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered access/signup.html.erb within layouts/application (44.3ms)
+Completed 500 Internal Server Error in 606ms
+
+Sass::SyntaxError - Invalid CSS after "...rt "bootstrap";": expected selector or at-rule, was "<link href='htt..."
+  (in /Users/Mary/Code/week8/activity_app/app/assets/stylesheets/access.css.scss:8):
+  app/assets/stylesheets/access.css.scss:8:in `'
+  sass (3.2.19) lib/sass/scss/parser.rb:1147:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:1085:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:28:in `parse'
+  sass (3.2.19) lib/sass/engine.rb:342:in `_to_tree'
+  sass (3.2.19) lib/sass/engine.rb:315:in `_render'
+  sass (3.2.19) lib/sass/engine.rb:262:in `render'
+  sass-rails (4.0.4) lib/sass/rails/template.rb:22:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.11.3) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `each'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.11.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:44:in `block in init_with'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `map'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:295:in `[]'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:159:in `block in stylesheet_link_tag'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `map'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2896948573979327424_70328392517600'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/60322e878b32b80b/variables" for 127.0.0.1 at 2014-11-24 09:23:32 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:23:55 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (41.6ms)
+Completed 500 Internal Server Error in 220ms
+
+Sass::SyntaxError - Invalid CSS after "...nd:300,700' rel": expected selector or at-rule, was "='stylesheet'"
+  (in /Users/Mary/Code/week8/activity_app/app/assets/stylesheets/access.css.scss:8):
+  app/assets/stylesheets/access.css.scss:8:in `'
+  sass (3.2.19) lib/sass/scss/parser.rb:1147:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:1085:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:28:in `parse'
+  sass (3.2.19) lib/sass/engine.rb:342:in `_to_tree'
+  sass (3.2.19) lib/sass/engine.rb:315:in `_render'
+  sass (3.2.19) lib/sass/engine.rb:262:in `render'
+  sass-rails (4.0.4) lib/sass/rails/template.rb:22:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.11.3) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `each'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.11.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:44:in `block in init_with'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `map'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:295:in `[]'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:159:in `block in stylesheet_link_tag'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `map'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2896948573979327424_70328392517600'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/c5fcc198dfe12be4/variables" for 127.0.0.1 at 2014-11-24 09:23:55 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 09:27:27 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 581ms
+
+Sass::SyntaxError - Invalid CSS after "...nd:300,700' rel": expected selector or at-rule, was "='stylesheet'"
+  (in /Users/Mary/Code/week8/activity_app/app/assets/stylesheets/access.css.scss:8):
+  app/assets/stylesheets/access.css.scss:8:in `'
+  sass (3.2.19) lib/sass/scss/parser.rb:1147:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:1085:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:28:in `parse'
+  sass (3.2.19) lib/sass/engine.rb:342:in `_to_tree'
+  sass (3.2.19) lib/sass/engine.rb:315:in `_render'
+  sass (3.2.19) lib/sass/engine.rb:262:in `render'
+  sass-rails (4.0.4) lib/sass/rails/template.rb:22:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.11.3) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `each'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.11.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:44:in `block in init_with'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `map'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:295:in `[]'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:159:in `block in stylesheet_link_tag'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `map'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2896948573979327424_70328392517600'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 09:27:28 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 70ms
+
+Sass::SyntaxError - Invalid CSS after "...nd:300,700' rel": expected selector or at-rule, was "='stylesheet'"
+  (in /Users/Mary/Code/week8/activity_app/app/assets/stylesheets/access.css.scss:8):
+  app/assets/stylesheets/access.css.scss:8:in `'
+  sass (3.2.19) lib/sass/scss/parser.rb:1147:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:1085:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:28:in `parse'
+  sass (3.2.19) lib/sass/engine.rb:342:in `_to_tree'
+  sass (3.2.19) lib/sass/engine.rb:315:in `_render'
+  sass (3.2.19) lib/sass/engine.rb:262:in `render'
+  sass-rails (4.0.4) lib/sass/rails/template.rb:22:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.11.3) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `each'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.11.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:44:in `block in init_with'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `map'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:295:in `[]'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:159:in `block in stylesheet_link_tag'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `map'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2896948573979327424_70328392517600'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/d391fdca1ec16131/variables" for 127.0.0.1 at 2014-11-24 09:27:28 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:27:35 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (202.8ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (206.9ms)
+Completed 500 Internal Server Error in 292ms
+
+Sass::SyntaxError - Invalid CSS after "...nd:300,700' rel": expected selector or at-rule, was "='stylesheet'"
+  (in /Users/Mary/Code/week8/activity_app/app/assets/stylesheets/access.css.scss:8):
+  app/assets/stylesheets/access.css.scss:8:in `'
+  sass (3.2.19) lib/sass/scss/parser.rb:1147:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:1085:in `expected'
+  sass (3.2.19) lib/sass/scss/parser.rb:28:in `parse'
+  sass (3.2.19) lib/sass/engine.rb:342:in `_to_tree'
+  sass (3.2.19) lib/sass/engine.rb:315:in `_render'
+  sass (3.2.19) lib/sass/engine.rb:262:in `render'
+  sass-rails (4.0.4) lib/sass/rails/template.rb:22:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.11.3) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `each'
+  sprockets (2.11.3) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.11.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.11.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:44:in `block in init_with'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `map'
+  sprockets (2.11.3) lib/sprockets/processed_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.11.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.11.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.11.3) lib/sprockets/base.rb:295:in `[]'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:159:in `block in stylesheet_link_tag'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `map'
+  sprockets-rails (2.2.0) lib/sprockets/rails/helper.rb:158:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___2896948573979327424_70328392517600'
+  actionview (4.1.7) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/a14c1adfe8856292/variables" for 127.0.0.1 at 2014-11-24 09:27:36 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:27:52 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.6ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 4471ms (Views: 4469.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:27:56 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.7ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 182ms (Views: 180.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:27:57 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:28:11 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (1.4ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 272ms (Views: 269.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:12 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:12 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:28:13 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:29:01 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (1.4ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 405ms (Views: 384.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:02 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.8ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 371ms (Views: 368.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:29:10 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:30:00 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (1.4ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 717ms (Views: 705.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:02 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:30:10 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (1.2ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 493ms (Views: 481.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:11 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (2.8ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 240ms (Views: 225.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:32 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:30:39 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.6ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 452ms (Views: 450.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:40 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:30:55 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.9ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 274ms (Views: 272.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:30:56 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:33:04 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (1.3ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 534ms (Views: 519.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:05 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:33:30 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 268ms (Views: 267.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:33:31 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 482ms (Views: 479.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:33:40 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:33:41 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:33:57 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 3179ms (Views: 3177.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:34:01 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered access/signup.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 242ms (Views: 240.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:13 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:34:14 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered access/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 154ms (Views: 153.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:34:22 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (1.3ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 284ms (Views: 282.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:28 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 287ms (Views: 286.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered access/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:34:34 -0800
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:34:40 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:35:24 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered access/login.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 3453ms (Views: 3448.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:28 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:35:29 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:35:52 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 2937ms (Views: 2935.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:35:55 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:36:34 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 3145ms (Views: 3144.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:36:38 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:37:01 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 3068ms (Views: 3067.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:37:05 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:37:55 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered access/login.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 3138ms (Views: 3132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:37:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:37:59 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:38:10 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 4087ms (Views: 4085.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:38:15 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:38:26 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 2979ms (Views: 2978.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:38:30 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:39:58 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered access/login.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 3695ms (Views: 3689.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:40:02 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:40:29 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 2868ms (Views: 2867.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:40:32 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 255ms (Views: 254.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:40:40 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:41:05 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/signup.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 3279ms (Views: 3278.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:08 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:41:09 -0800
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-11-24 09:41:14 -0800
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:41:14 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 436ms (Views: 435.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:41:15 -0800
+
+
+Started GET "/forgot" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+Processing by AccessController#forgot_password as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/forgot_password.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:19 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:41:20 -0800
+
+
+Started GET "/forgot" for 127.0.0.1 at 2014-11-24 09:41:36 -0800
+Processing by AccessController#forgot_password as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/forgot_password.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 2735ms (Views: 2733.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:41:39 -0800
+
+
+Started GET "/forgot" for 127.0.0.1 at 2014-11-24 09:41:44 -0800
+Processing by AccessController#forgot_password as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/forgot_password.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 156ms (Views: 155.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:44 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:44 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:44 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:41:45 -0800
+
+
+Started GET "/forgot" for 127.0.0.1 at 2014-11-24 09:42:53 -0800
+Processing by AccessController#forgot_password as HTML
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered access/forgot_password.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 3481ms (Views: 3477.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:56 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:42:57 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:43:01 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 246ms (Views: 244.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:43:02 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:43:39 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 3216ms (Views: 3214.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:43:43 -0800
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+Processing by AccessController#signup as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered access/signup.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 135ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:43:47 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 216ms (Views: 215.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:43:51 -0800
+
+
+Started GET "/forgot" for 127.0.0.1 at 2014-11-24 09:43:53 -0800
+Processing by AccessController#forgot_password as HTML
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered access/forgot_password.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 118ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:43:54 -0800
+
+
+Started GET "/forgot" for 127.0.0.1 at 2014-11-24 09:44:12 -0800
+Processing by AccessController#forgot_password as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/forgot_password.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 3128ms (Views: 3126.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:44:15 -0800
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+Processing by AccessController#login as HTML
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered access/login.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 202ms (Views: 200.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:21 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:22 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:22 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:22 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:22 -0800
+
+
+Started GET "/assets/fourcanoes.jpg" for 127.0.0.1 at 2014-11-24 09:44:22 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (1.2ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 446ms (Views: 442.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.6ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:44 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:45 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:45 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:45 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:45 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:45 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:44:45 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:45:50 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (1.6ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 4700ms (Views: 4690.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:55 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:45:56 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:46:01 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.6ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2232ms (Views: 2230.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:04 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:46:10 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[35mActivity Load (0.8ms)[0m  SELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)
+  Rendered activities/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1937ms (Views: 1935.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:12 -0800
+
+
+Started GET "/activities" for 127.0.0.1 at 2014-11-24 09:46:24 -0800
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (1.3ms)[0m  [1mSELECT "activities".* FROM "activities"  WHERE (time_min <= 100) AND (time_max IS NULL OR time_max >= 100)[0m
+  Rendered activities/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 3006ms (Views: 3003.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/access.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/activities.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/blah.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/handlebars.runtime.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/templates/template.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/jcarousel.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/access.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/activities.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 09:46:27 -0800

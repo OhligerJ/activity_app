@@ -26,22 +26,16 @@
 					<% if activity.time_min != nil and activity.time_max != nil %>
 						<div class="time">Estimated Time: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
 					<% else %>
-						<div class="time">Time: <%= activity_list.time_min %></div>
+						<div class="time">Time: <%= activity_list.time_min %> minutes</div>
 					<% end %>
 					<br>
 
-					<div class="social-buttons">
-					<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-					
-				<div class="favorite-button"> Fave
-					<% if @current_user %>
+					<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
+					<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
+<!-- 					<% if @current_user %>
   				<% link_to "favorite",   favorite_activity_path(@activity, type: "favorite"), method: :put %>
   				<% link_to "unfavorite", favorite_activity_path(@activity, type: "unfavorite"), method: :put %>
-					<% end %>
-
-					</div>
-					</div>
-
+					<% end %> -->
 					</div>
 
 					</li>
@@ -60,4 +54,3 @@
 	</div>	
 </div>
 
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
