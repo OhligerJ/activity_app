@@ -32,10 +32,11 @@
 
 					<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
 					<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
-<!-- 					<% if @current_user %>
+		
+					<% if @current_user %>
   				<% link_to "favorite",   favorite_activity_path(@activity, type: "favorite"), method: :put %>
-  				<% link_to "unfavorite", favorite_activity_path(@activity, type: "unfavorite"), method: :put %>
-					<% end %> -->
+
+					<% end %> 
 					</div>
 
 					</li>
