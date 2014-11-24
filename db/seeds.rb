@@ -16,6 +16,7 @@
 		description: hipster_words.join,
 		location: "SF",
 		time_min: rand(30..60),
-		time_max: rand(120..480)
+		time_max: rand(120..480),
+		img_url: 'http://lorempixel.com/800/800/'
 	)
 end
