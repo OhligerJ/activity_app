@@ -23,14 +23,14 @@ class ActivitiesController < ApplicationController
   end
 
   def show
-
+  	@activity = Activity.find params[:id]
   end
 
 
 
   private
   def activity_params 
-    params.require(:activity).permit(:title, :location, :time_min, :time_max, :description, :api_url, :star_rating )
+    params.require(:activity).permit(:title, :location, :time_min, :time_max, :description, :img_url, :star_rating )
   end
 
 end

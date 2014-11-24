@@ -15,17 +15,28 @@
 
 <p>Click the button to get your coordinates.</p>
 
+<div>title: <%= @activity.title %></div>
+<div>location: <%= @activity.location %></div>
+<div>time_min: <%= @activity.time_min %></div>
+<div>time_max: <%= @activity.time_max %></div>
+<div>description: <%= @activity.description %></div>
+<div>api_url: <%= @activity.api_url %></div>
+<div>star_rating: <%= @activity.star_rating %></div>
+<div>user_id: <%= @activity.user_id %></div>
+<div>img_url: <%= @activity.img_url %></div>
+<div><img src="<%= @activity.img_url %>-/resize/300x/ ">  </div>
+
 <button onclick="getLocation()">Try It</button>
 
 <p id="demo"></p>
 <br>
-<div id="outputDiv"><p>loading data...</p> <img class="gif1" src="../../assets/gallery_loader.gif" alt="load spinner gif"> </div>
+<div id="outputDiv"><p>calculating distance and commuting time...</p> <img class="gif1" src="../../assets/gallery_loader.gif" alt="load spinner gif"> </div>
 
 <script>
 var x = document.getElementById("demo");
 
 var origin1; // = new google.maps.LatLng(37.751578, -122.447838);
-var destinationA = '5285 Diamond Heights, San Francisco';
+var destinationA = "<%= @activity.location %>";
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -83,9 +94,6 @@ function showPosition(position) {
                   '<br>duration =  ' + results[0].duration.text + '<br>';
     }
   }
-
-
-
 
 }
 
