@@ -1,0 +1,113 @@
+<!-- mix index index2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Geolocation and calculates distance to a destination</title>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <style>
+      .gif1 {
+        height: 180px;
+        width: 180px;
+      }
+    </style>
+</head>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+<br>
+<div id="outputDiv"><p>loading data...</p> <img class="gif1" src="../../assets/gallery_loader.gif" alt="load spinner gif"> </div>
+
+<script>
+var x = document.getElementById("demo");
+
+var origin1; // = new google.maps.LatLng(37.751578, -122.447838);
+var destinationA = '5285 Diamond Heights, San Francisco';
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+  x.innerHTML = "Latitude: " + lat + 
+  "<br>Longitude: " + lon; 
+  origin1 = new google.maps.LatLng(lat, lon);
+
+  var service = new google.maps.DistanceMatrixService();
+    service.getDistanceMatrix(
+      {
+        // origins: [origin1, origin2],
+        origins: [origin1],
+        // destinations: [destinationA, destinationB],
+        destinations: [destinationA],
+        // travelMode: google.maps.TravelMode.WALKING,
+        // travelMode: google.maps.TravelMode.BICYCLING, 
+        travelMode: google.maps.TravelMode.DRIVING,
+        // unitSystem: google.maps.UnitSystem.METRIC,
+        unitSystem: google.maps.UnitSystem.IMPERIAL,
+        // avoidHighways: false,
+        // avoidTolls: false
+      }, callback);
+
+  function callback(response, status) {
+    if (status != google.maps.DistanceMatrixStatus.OK) {
+      alert('Error was: ' + status);
+    } else {
+      var origins = response.originAddresses;
+      console.log(origins[0]);
+      var destinations = response.destinationAddresses;
+      console.log(destinations[0]);
+      var outputDiv = document.getElementById('outputDiv');
+      outputDiv.innerHTML = '';
+      // deleteOverlays();
+
+
+      // there is only one row because there is only one origin      
+      var results = response.rows[0].elements;
+      console.log(results);
+      console.log(results[0].distance.text);
+      console.log(results[0].duration.text);
+
+      outputDiv.innerHTML += 'origin: ' + origins[0] + 
+                  '<br>destination: ' + destinations[0] + 
+                  '<br>distance = ' + results[0].distance.text + 
+                  '<br>duration =  ' + results[0].duration.text + '<br>';
+    }
+  }
+
+
+
+
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+
+</body>
+</html>
+
+
