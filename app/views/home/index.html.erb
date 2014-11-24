@@ -4,15 +4,23 @@
 
 			<div>
 			<div id= "header" class="page-container bored-header clearfix shift-with-hiw">
-					<a href="/" class="header-logo pull-left"><img src="/assets/clock2.png"></a>
+				<a href="/" class="header-logo pull-left"><img src="/assets/clock2.png"></a>
+				
 				<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
+					<% if session[:user_id] == nil %>
 					<li id="sign_up" class="pull-left medium-right-margin"> 
 						<a href="/signup">Sign Up</a>
 					</li>
 					<li id="login" class="pull-left"> 
 						<a href="/login">Login</a>
 					</li>
+					<% else %>
+					<li id="login" class="pull-left"> 
+						<a href="/logout">Logout</a>
+					</li>
+				<% end %>
 				</ul>
+				
 			</div>
 		</div>
 <!-- 	</div> -->
@@ -26,7 +34,7 @@
 
 						<div class="timetospare">time to spare:</div>
 						<!-- <div class="timeinput">0d 0h 0m</div> -->
-								<form action="/search" method="GET">
+								<form action="/activities" method="GET">
       							<input class="time" type="integer" name="days"placeholder="0"><label class="marker" for="d">d</label>
       							<input class="time" type="integer" name="hours" placeholder="0"><label class="marker" for="h">h</label>
       							<input class="time" type="integer" name="minutes" placeholder="0"><label class="marker" for="d">m</label>
