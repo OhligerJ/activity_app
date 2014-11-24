@@ -18,8 +18,11 @@
 					<% if activity.time_min != nil and activity.time_max != nil %>
 						<div class="time">Time Span: <%= activity.time_min %> minutes to <%= activity.time_max %> minutes. </div>
 					<% else %>
-						<div class="time">Time: <%= activity_list.time_min %></div>
+						<div class="time">Time: <%= activity_list.time_min %> minutes</div>
 					<% end %>
+
+					<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
+					<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
 
 					</li>
 		        <% end %>
