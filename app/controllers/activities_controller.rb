@@ -9,7 +9,11 @@ class ActivitiesController < ApplicationController
   end
 
   def index
-    p params
+    if params["days"] =~ %r/[^0-9]/ || params["hours"] =~ %r/[^0-9]/ || params["minutes"] =~ %r/[^0-9]/
+      flash["failure"]= "Yo, numbers only, plis"
+      redirect_to home_path
+      return
+    end
     if params["days"] == ""
       params["days"] = 0
     end
@@ -19,7 +23,7 @@ class ActivitiesController < ApplicationController
     if params["minutes"] == ""
       params["minutes"] = 0
     end
-    if params["days"] + params["hours"] + params["minutes"] == 0
+    if params["days"].to_i + params["hours"].to_i + params["minutes"].to_i == 0
       flash["failure"]= "Please input a time greater than zero."
       redirect_to home_path
     end
