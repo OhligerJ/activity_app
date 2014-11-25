@@ -10,7 +10,7 @@ class ActivitiesController < ApplicationController
 
   def index
     if params["days"] =~ %r/[^0-9]/ || params["hours"] =~ %r/[^0-9]/ || params["minutes"] =~ %r/[^0-9]/
-      flash["failure"]= "Yo, numbers only, plis"
+      flash["failure"]= "Yo, numbers only, pls"
       redirect_to home_path
       return
     end

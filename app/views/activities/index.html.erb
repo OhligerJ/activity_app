@@ -1,6 +1,6 @@
 
 <div id= "header-carousel" class="page-container bored-header clearfix shift-with-hiw">
-	<a href="/" id="logo-carousel" class="header-logo pull-left"><img src="/assets/clockblack.png"></a>
+	<a href="/" id="logo-carousel" class="header-logo pull-left"><img src="<%= image_path('clockblack.png') %>"></a>
 				
 	<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
 		<% if session[:user_id] == nil %>
