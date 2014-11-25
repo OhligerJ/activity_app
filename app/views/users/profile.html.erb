@@ -1,2 +1,271 @@
-<h1>Users#profile</h1>
-<p>Find me in app/views/users/profile.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,700' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="profile.css">
+
+<!-- 	<script>
+$(document).ready(function() {
+    $('#loginForm').bootstrapValidator({
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required'
+                    }
+                }
+            }
+        }
+    });
+});
+
+	</script> -->
+</head>
+
+<body>
+	
+		<div>
+			<div id= "header" class="page-container bored-header clearfix shift-with-hiw">
+					<a href="/" class="header-logo pull-left"><img src="boredom/images/clockblack.png"></a>
+				<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
+					<!-- <li id="sign_up" class="pull-left medium-right-margin"> 
+						<a href="/signup">Sign Up</a>
+					</li> -->
+					<li id="login" class="pull-left"> 
+						<a href="/login">Logout</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+<hr>
+
+			<div class="row row-table row-full-height text-center">
+					<!-- ::before -->
+					<div class="col-12 col-middle">
+						<img id="image" src="boredom/images/mike.png"> 
+						<div class="username">Emerson Steel</div>
+						<p class="blurb">SF native, seeking and suggesting accessible adventures</p>
+						<!-- <hr class="line"> -->
+					</div>
+			</div>
+
+<hr class="line">
+
+<div class="row row-table row-full-height text-center">
+	<div class="col-12 col-middle">
+         <div>
+            <a id="myHeader1" href="javascript:showonlyone('newboxes1');">
+            <div class="profile-details-wrapper">
+            <span class="value stat">3</span>
+            <span class="label stat">favorites</span>
+           	</div>
+            </a>
+            
+            <a id="myHeader2" href="javascript:showonlyone('newboxes2');">
+            <div class="profile-details-wrapper">
+           	<span class="value stat">2</span>
+            <span class="label stat">curations</span>
+            </div>
+            </a>
+         </div>
+ 				
+				
+
+     			<div class="newboxes gray" id="newboxes1"> 
+		<div class="page-container page-container-fixed">
+			<div class="discovery-section" id="for-the-day">
+				<div class="section-intro text-center row-space-5 row-space-top-8"></div>
+			<div class="discovery-tiles row-space-top-6 row-space-6">
+				<div class="homepage-module">
+					<div class="carousel-item row">
+					<div class="col-1">
+						<div class="col-3">
+								<!-- <a href=""> -->
+								<img src="boredom/images/cooking.jpg">
+								<span class="what4">Perfect Pancakes Cooking Class</span>
+								<div class="row row-table row-full-height">
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-1">
+						<div class="col-3">
+								<!-- <a href=""> -->
+								<img src="boredom/images/bees.jpg">
+								<span class="what5">Beekeeping</span>
+								<div class="row row-table row-full-height">
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					<div class="col-1">
+						<div class="col-3">
+								<img src="boredom/images/winetasting.jpg">
+								<span class="what6">Wine Tasting</span>
+								<div class="row row-table row-full-height">
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="newboxes gray" id="newboxes2" style="display: none"> 
+		<div class="page-container page-container-fixed">
+			<div class="discovery-section" id="for-the-day">
+				<div class="section-intro text-center row-space-5 row-space-top-8"></div>
+			<div class="discovery-tiles row-space-top-6 row-space-6">
+				<div class="homepage-module">
+					<div class="carousel-item row">
+
+					<div class="col-1">
+						<div class="col-3">
+								<!-- <a href=""> -->
+								<!-- <img src="boredom/images/flowers.jpg"> -->
+
+
+									<button class="btn curate btn-default" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"  aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Curate</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <form id="loginForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Username</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="username" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-5 col-sm-offset-3">
+                            <button type="submit" class="btn btn-default">Submit!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+								<div class="row row-table row-full-height">
+									<div class="panel-body">
+									</div>
+								</div>
+						</div>
+					</div>
+
+						<div class="col-1">
+						<div class="col-3">
+								<!-- <a href=""> -->
+								<img src="boredom/images/coffee.jpg">
+								<span class="what4">Espresso Factory</span>
+								<div class="row row-table row-full-height">
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-1">
+						<div class="col-3">
+								<!-- <a href=""> -->
+								<img src="boredom/images/bikes.jpg">
+								<span class="what5">Rent a Bike</span>
+								<div class="row row-table row-full-height">
+									<div class="panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+		</div>
+			</div>
+
+	
+
+
+
+
+		<script type="text/javascript">
+
+		function showonlyone(thechosenone) {
+     $('.newboxes').each(function(index) {
+          if ($(this).attr("id") == thechosenone) {
+               $(this).show();
+          }
+          else {
+               $(this).hide();
+          }
+     });
+}
+
+
+
+
+</script>
+</body>
+
+</html>
