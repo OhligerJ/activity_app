@@ -33,6 +33,9 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
+<% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, class: name %>
+    <% end %>
 
 <%= yield %>
 
