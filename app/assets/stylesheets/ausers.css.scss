@@ -1,0 +1,243 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+label {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+}
+
+.page-container-full {
+	/*width: auto; 
+	min-width: 1200px; 
+	height:600px;
+	position: relative;
+	background: url('boredom/images/home2.jpg');*/ 
+} 
+
+#welcome-container {
+	width: auto; 
+	min-width: 1200px; 
+	height:560px;
+	position: relative;
+	background: url('home2.jpg'); 
+}
+.page-container {
+	margin-left:auto; 
+	margin-right:auto; 
+	padding-left:25px; 
+	padding-right:25px; 
+	width:1200px; 
+}
+
+
+
+.row-space-top-8 {
+	/*margin-top: 50px;*/
+}
+
+.row-space-5 {
+	margin-bottom: 31.25px; 
+}
+
+div {
+	display: block; 
+} 
+
+.row-full-height {
+	height: 100%; 
+} 
+
+.col-3{
+    width:33.33333%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.col-6{
+	width:50%;
+	float: left;
+	margin-top:30px;
+	position:relative;
+}
+
+#header {
+	background-color: transparent;
+	line-height: 10px;
+	z-index: 1000;
+	width: 100%;
+	top:15px;
+	position: relative;
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.nav>li {
+	line-height: 28px;
+	display: flex;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+li {
+	/*display: list-item;*/
+	/*display: inline-block;*/
+}
+
+a {
+	color: black;
+	text-decoration: none; 
+}
+
+.username {
+    /*z-index:100;*/
+    /*position:absolute;  */  
+    color:white;
+    font-size:48px;
+    color: black;
+		font-family: 'Quicksand', sans-serif;
+		/*margin-top: 90px;*/
+		letter-spacing:1px;
+} 
+
+#login {
+	margin-bottom:10px;
+}
+
+.blurb {
+    
+    color:white;
+    font-size:14px;
+    color: black;
+		font-family: 'Quicksand', sans-serif;
+		margin-top: 15px;
+		letter-spacing:1px;
+		margin-bottom:10px;
+} 
+
+#image {
+	width:140px;
+	margin-top:20px;
+}
+
+.gray {
+	background:#f6f6f6; 
+	margin-top:30px;
+	padding-bottom:40px;
+	padding-top:30px;
+	/*width: 100%;*/
+}
+
+.curate {
+	height:335px;
+	width:340px;
+	font-family: 'Quicksand', sans-serif;
+	background:white;
+	
+}
+
+.line {
+	border: .08em solid #F0F0F0;
+
+}
+
+.activity {
+	font-family: 'Quicksand', sans-serif;
+	color:black;
+	font-size: 18px; 
+	text-align:left;
+}
+
+.label {
+		color:black !important;
+    font-size:14px !important;
+		font-family: 'Quicksand', sans-serif;
+		letter-spacing:1px;
+		padding:10px;
+		display:block;	
+		font-weight:lighter !important;
+}
+
+.value {
+		color:black;
+    font-size:14px;
+		font-family: 'Quicksand', sans-serif;
+		letter-spacing:1px;
+		padding:5px;
+		font-weight: bold; 
+		display:block;	
+}
+
+.profile-details-wrapper {
+	display: inline-block;
+	/*padding:20px;*/
+	margin-top:10px;
+	/*padding-left:30px;*/
+}
+
+.header-logo {
+	margin-top:10px;
+}
+
+/*.stat + .stat {
+	margin-left:20px;
+}*/
+
+.what4 {
+    color:white;
+    font-size:15px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing:1px;
+    /*top:-200px;*/
+    z-index:1000;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    left:0;
+    margin-top:180px;
+    /*font-weight: 600; */
+}
+
+.what5 {
+    color:white;
+    font-size:15px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing:1px;
+    /*top:-200px;*/
+    z-index:1000;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    left:0;
+    margin-top:180px;
+    /*font-weight: 600;*/
+}
+
+.what6 {
+    color:white;
+    font-size:15px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing:1px;
+    /*top:-200px;*/
+    z-index:1000;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    left:0;
+    margin-top:180px;
+    /*font-weight: 600;*/
+    /*margin-left:200px;*/
+}
+
+.carousel-item {
+    position: relative;
+}

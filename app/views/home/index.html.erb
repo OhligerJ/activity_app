@@ -1,11 +1,12 @@
-
+	
 	<div class="page-container-full" id="welcome-wrapper">
 		<div id="welcome-container">
 
 			<div>
 			<div id= "header" class="page-container bored-header clearfix shift-with-hiw">
+
 				<a href="/" class="header-logo pull-left"><img src="<%= image_path('clock2.png') %>"></a>
-				
+
 				<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
 					<% if session[:user_id] == nil %>
 					<li id="sign_up" class="pull-left medium-right-margin"> 
@@ -16,16 +17,16 @@
 					</li>
 					<% else %>
 					<li id="login" class="pull-left"> 
+						<a href="/users/profile" class="indexpage">Profile</a>
+					</li>
+					<li id="login" class="pull-left"> 
 						<a href="/logout" class="indexpage">Logout</a>
 					</li>
-				<% end %>
+					<% end %>
 				</ul>
-				
 			</div>
 		</div>
-<!-- 	</div> -->
-<!-- 	</div> -->
-	
+
 
 
 			<div class="row row-table row-full-height text-center">
@@ -34,10 +35,10 @@
 
 						<div class="timetospare">time to spare:</div>
 						<!-- <div class="timeinput">0d 0h 0m</div> -->
-								<form action="/activities" method="GET" class="time_form">
-      							<input class="time" type="integer" name="days" placeholder="0"><label class="marker" for="d">d</label>
-      							<input class="time" type="integer" name="hours" placeholder="0"><label class="marker" for="h">h</label>
-      							<input class="time" type="integer" name="minutes" placeholder="0"><label class="marker" for="m">m</label>
+								<form action="/activities" method="GET">
+      							<input class="time" type="integer" name="days"placeholder="0" autocomplete = "off" maxlength="2"><label class="marker" for="d">d</label>
+      							<input maxlength="2"class="time" type="integer" name="hours" placeholder="0" autocomplete = "off"><label class="marker" for="h">h</label>
+      							<input  maxlength="2"class="time" type="integer" name="minutes" placeholder="0" autocomplete = "off"><label class="marker" for="d">m</label>
       							<br><input class="submit" type="submit" value="discover">
     						</form>
 
@@ -52,33 +53,38 @@
 	<div class="page-container-full" id="discovery-container"> 
 		<div class="page-container page-container-fixed">
 			<div class="discovery-section" id="for-the-day">
+
+
 				<div class="section-intro text-center row-space-5 row-space-top-8">
 					<p class="timedescription">creative solutions to boredom</p>
 					<p class="whatfor">discover new ways to spend an idyllic hour, afternoon or weekend</p>
 				</div>
+
+
+		<div class="page-container page-container-fixed">
+			<div class="discovery-section" id="for-the-day">
+				<div class="section-intro text-center row-space-5 row-space-top-8"></div>
 			<div class="discovery-tiles row-space-top-6 row-space-6">
 				<div class="homepage-module">
 					<div class="carousel-item row">
 					<div class="col-1">
 						<div class="col-3">
-							<!-- <div class="panel"> -->
-								<a href="">
-								<img src="/assets/lake.jpg">
+								<!-- <a href=""> -->
+								<img src="/assets/cooking.jpg">
+								<span class="what4">Perfect Pancakes Cooking Class</span>
 								<div class="row row-table row-full-height">
 									<div class="panel-body">
-										<!-- <span class="what">Lakeside</span> -->
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-1">
 						<div class="col-3">
-							<!-- <div class="panel"> -->
-								<a href="">
-								<img src="/assets/flowers.jpg">
+								<!-- <a href=""> -->
+								<img src="/assets/bees.jpg">
+								<span class="what5">Beekeeping</span>
 								<div class="row row-table row-full-height">
 									<div class="panel-body">
-										<!-- <span class="what">Lakeside</span> -->
 									</div>
 								</div>
 							</div>
@@ -86,12 +92,10 @@
 
 					<div class="col-1">
 						<div class="col-3">
-							<!-- <div class="panel"> -->
-								<!-- <a href=""> -->
-								<img src="/assets/canoe.jpg">
+								<img src="/assets/winetasting.jpg">
+								<span class="what6">Wine Tasting</span>
 								<div class="row row-table row-full-height">
 									<div class="panel-body">
-										<!-- <span class="what">Lakeside</span> -->
 									</div>
 								</div>
 							</div>
@@ -103,10 +107,10 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
 
-
-	<div class="page-container-full" id="discovery-container-gray"> 
+	<div class="container-full-gray" id="discovery-container"> 
 		<div class="page-container page-container-fixed">
 			<div class="discovery-section" id="for-the-day">
 				<div class="section-intro text-center row-space-5 row-space-top-8">
@@ -126,14 +130,15 @@
 						
 						<div class="col-6">
 								<a href="">
+								<div class="profile-icon-wrapper">
 								<img class="imageprofile2" src="<%= image_path('boy.png')%>">
+								</div>
 								<img class="image" src="<%= image_path('teadark.jpg')%>">
 								<span class="what3">Peter's Books & Tea Cafe</span>
 						</div>
 				
 				<!-- <div class="row">
 						<div class="col-12">
-								<a href="">
 								<img src="twitter.png">				
 						</div>
 				</div> -->
@@ -175,6 +180,9 @@
 		</div>
 	</div>
 
+
+
+
 <script>
 	var frm = "form.time_form";
 
@@ -185,3 +193,4 @@ $(frm).on("submit", function(e){
 	}
 });
 </script>
+
