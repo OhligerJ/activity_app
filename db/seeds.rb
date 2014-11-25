@@ -6,17 +6,44 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-10.times do
-	hipster_words = []
-	100.times do
-		hipster_words << "#{Faker::HipsterIpsum.word} "
-	end
-	Activity.create(
-		title: "eating some #{Faker::Food.meat}",
-		description: hipster_words.join,
+# 10.times do
+# 	hipster_words = []
+# 	100.times do
+# 		hipster_words << "#{Faker::HipsterIpsum.word} "
+# 	end
+# 	Activity.create(
+# 		title: "eating some #{Faker::Food.meat}",
+# 		description: hipster_words.join,
+# 		location: "San Francisco, USA",
+# 		time_min: rand(30..60),
+# 		time_max: rand(120..480),
+# 		img_url: 'http://lorempixel.com/1000/700/'
+# 	)
+# end
+
+Activity.create(
+		title: "Beekeeping at Holland Farms",
+		description: "lorempixel",
 		location: "San Francisco, USA",
 		time_min: rand(30..60),
 		time_max: rand(120..480),
-		img_url: 'http://lorempixel.com/1000/700/'
+		img_url: 'http://fuzzco.com/wp-content/uploads/2013/07/honey.jpg'
 	)
-end
+
+	Activity.create(
+		title: "Beekeeping at Holland Farms",
+		description: "lorempixel",
+		location: "San Francisco, USA",
+		time_min: rand(30..60),
+		time_max: rand(120..480),
+		img_url: 'http://fuzzco.com/wp-content/uploads/2013/07/honey.jpg'
+	)
+
+	Activity.create(
+		title: "Beekeeping at Holland Farms",
+		description: "lorempixel",
+		location: "San Francisco, USA",
+		time_min: rand(30..60),
+		time_max: rand(120..480),
+		img_url: 'http://fuzzco.com/wp-content/uploads/2013/07/honey.jpg'
+	)
