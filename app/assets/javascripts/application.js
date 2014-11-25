@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require handlebars.runtime
+// require ./uploadcare
 //= require_tree ./templates
 //= require_tree ../../../vendor/assets/javascripts
 //= require_tree .
-// require ./uploadcare

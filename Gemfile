@@ -58,3 +58,7 @@ group :test, :development do
 	gem 'pry-byebug'
 	gem 'ffaker'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
