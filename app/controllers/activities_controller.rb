@@ -9,14 +9,23 @@ class ActivitiesController < ApplicationController
   end
 
   def index
-    if !params["days"]
+    if params["days"] =~ %r/[^0-9]/ || params["hours"] =~ %r/[^0-9]/ || params["minutes"] =~ %r/[^0-9]/
+      flash["failure"]= "Yo, numbers only, plis"
+      redirect_to home_path
+      return
+    end
+    if params["days"] == ""
       params["days"] = 0
     end
-    if !params["hours"]
+    if params["hours"] == ""
       params["hours"] = 0
     end
-    if !params["minutes"]
+    if params["minutes"] == ""
       params["minutes"] = 0
+    end
+    if params["days"].to_i + params["hours"].to_i + params["minutes"].to_i == 0
+      flash["failure"]= "Please input a time greater than zero."
+      redirect_to home_path
     end
   	@activity_list = Activity.fun_activities_with_user(Activity.convert_to_minutes(params["days"], params["hours"], params["minutes"]))
   end

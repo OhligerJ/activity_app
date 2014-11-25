@@ -331,3 +331,15 @@ li {
     padding-right:5px;
 }
 
+div.failure {
+    background-color: rgba(250, 0, 0, 0.75);
+}
+
+div.flash {
+    width:100%;
+    height:60px;
+    text-align:center;
+    font-size:22px;
+    padding-top:15px;
+    letter-spacing: 0.09em;
+}
