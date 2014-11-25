@@ -9,14 +9,14 @@
 				<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
 					<% if session[:user_id] == nil %>
 					<li id="sign_up" class="pull-left medium-right-margin"> 
-						<a href="/signup">Sign Up</a>
+						<a href="/signup" class="indexpage">Sign Up</a>
 					</li>
 					<li id="login" class="pull-left"> 
-						<a href="/login">Login</a>
+						<a href="/login" class="indexpage">Login</a>
 					</li>
 					<% else %>
 					<li id="login" class="pull-left"> 
-						<a href="/logout">Logout</a>
+						<a href="/logout" class="indexpage">Logout</a>
 					</li>
 				<% end %>
 				</ul>

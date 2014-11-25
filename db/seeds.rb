@@ -17,6 +17,6 @@
 		location: "San Francisco, USA",
 		time_min: rand(30..60),
 		time_max: rand(120..480),
-		img_url: 'http://lorempixel.com/800/800/'
+		img_url: 'http://lorempixel.com/1000/700/'
 	)
 end

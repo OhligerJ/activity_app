@@ -68,11 +68,11 @@ class AccessController < ApplicationController
     end
 
     if !found_user
-      flash.now[:alert] = "Invalid username"
+      flash.now[:failure] = "Invalid username"
       render :login
 
     elsif !authorized_user
-      flash.now[:alert] = "Invalid password"
+      flash.now[:failure] = "Invalid password"
       render :login
 
     else

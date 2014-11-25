@@ -28,6 +28,10 @@ class ActivitiesController < ApplicationController
       redirect_to home_path
     end
   	@activity_list = Activity.fun_activities_with_user(Activity.convert_to_minutes(params["days"], params["hours"], params["minutes"]))
+    if @activity_list.length == 0
+      flash["failure"] = "No results were returned."
+      redirect_to home_path
+    end
   end
 
   def create
@@ -44,7 +48,11 @@ class ActivitiesController < ApplicationController
   def favorite
     type = params[:type]
     if type == "favorite"
-      @current_user.favorites << @activity
+      @current_user = User.find session[:user_id]
+      favorite = @current_user.favorites.new
+      favorite.activity_id = params[:activity_id]
+      favorite.user_id = session[:user_id] 
+      favorite.save
       redirect_to :back, notice: 'You favorited #{@activity.title}'
     else
       # Type missing, nothing happens
