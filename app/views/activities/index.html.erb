@@ -1,9 +1,39 @@
-<div class="wrapper">
+
+<div id= "header-carousel" class="page-container bored-header clearfix shift-with-hiw">
+	<a href="/" id="logo-carousel" class="header-logo pull-left"><img src="<%= image_path('clockblack.png') %>"></a>
+				
+	<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
+		<% if session[:user_id] == nil %>
+		<li id="sign_up-carousel" class="pull-left medium-right-margin"> 
+			<a href="/signup">Sign Up</a>
+		</li>
+		<li id="login-carousel" class="pull-left"> 
+			<a href="/login">Login</a>
+		</li>
+		<% else %>
+		<li id="login-carousel" class="pull-left"> 
+			<a href="/logout">Logout</a>
+		</li>
+			<% end %>
+		</ul>
+				
+			</div>
+
+<div class="wrapper page container">
 	<div class="jcarousel-wrapper">
 		<div class="jcarousel">
 		    <ul>
-		      <% for activity in @activity_list %>	
+
+		      <% for activity in @activity_list %>
+		        
 		      <li>
+		      <div class="act-container">
+					 <% if activity.img_url != nil %>	
+					 <div class="activity-img">
+					 <%= image_tag(activity.img_url) %>
+					</div>
+					<% end %>
+
 					<% if activity.title != nil %>
 					<div class="act-desc col-3">
 						<div class="title"><%= activity.title %></div>
@@ -20,26 +50,30 @@
 					<br>
 
 					<% if activity.time_min != nil and activity.time_max != nil %>
-						<div class="time">Estimated Time: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
+						<div class="time-range">Estimated Time: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
 					<% else %>
-						<div class="time">Time: <%= activity_list.time_min %> minutes</div>
+						<div class="time-range">Time: <%= activity_list.time_min %> minutes</div>
 					<% end %>
 					<br>
+					<div class="share-buttons">
+						<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
+						<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
+					
+						<% if session[:user_id] %>
 
-					<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
-					<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
-		
-					<% if @current_user %>
-  				<% link_to "favorite",   favorite_activity_path(@activity, type: "favorite"), method: :put %>
+						<%= link_to('Favorite', favorite_activity_path(activity_id: activity.id, type: "favorite"), :method => :post ) %>
 
-					<% end %> 
-					</div>
+						<% end %> 
+					</div> <!-- end share buttons -->
+					</div> <!-- end description div -->
+					</div><!--  end act container -->
 
 					</li>
 		        <% end %>
 		    </ul>
-		</div>
 
+		</div> <!-- end jcarousel -->
+		
 		<!-- Prev/next controls -->
 		<a href="#" class="jcarousel-control-prev">&lsaquo; </a>
 		<a href="#" class="jcarousel-control-next"> &rsaquo;</a>

@@ -1,46 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	
-	<meta charset="UTF-8">
-	<title>Document</title>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-	
-
-	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,700' rel='stylesheet' type='text/css'>
-	
-	<link rel="stylesheet" type="text/css" href="/assets/application.home.css.scss">
-</head>
-
-
-
-<body>
 	
 	<div class="page-container-full" id="welcome-wrapper">
 		<div id="welcome-container">
 
 			<div>
 			<div id= "header" class="page-container bored-header clearfix shift-with-hiw">
-					<a href="/" class="header-logo pull-left"><img src="/assets/clock2.png"></a>
+
+				<a href="/" class="header-logo pull-left"><img src="<%= image_path('clock2.png') %>"></a>
+
 				<ul class="nav pull-right logged-out list-unstyled medium-right-margin">
+					<% if session[:user_id] == nil %>
 					<li id="sign_up" class="pull-left medium-right-margin"> 
-						<a class="indexpage" href="/signup">Sign Up</a>
+						<a href="/signup" class="indexpage">Sign Up</a>
 					</li>
 					<li id="login" class="pull-left"> 
-						<a class="indexpage" href="/login">Login</a>
+						<a href="/login" class="indexpage">Login</a>
 					</li>
+					<% else %>
+					<li id="login" class="pull-left"> 
+						<a href="/users/profile" class="indexpage">Profile</a>
+					</li>
+					<li id="login" class="pull-left"> 
+						<a href="/logout" class="indexpage">Logout</a>
+					</li>
+					<% end %>
 				</ul>
 			</div>
 		</div>
@@ -140,16 +122,18 @@
 					<div class="carousel-item row">
 						
 						<div class="col-6">
-								<img class="imageprofile" src="/assets/girl.png">
-								<img class="image" src="/assets/inthewoodsdark.jpg">
+								<a href="">
+								<img class="imageprofile" src="<%= image_path('girl.png')%>">
+								<img class="image" src="<%= image_path('inthewoodsdark.jpg')%>">
 								<span class="what2">Mel's Woodland Hike</span>
 						</div>
 						
 						<div class="col-6">
+								<a href="">
 								<div class="profile-icon-wrapper">
-									<img class="imageprofile2" src="/assets/boy.png">
+								<img class="imageprofile2" src="<%= image_path('boy.png')%>">
 								</div>
-								<img class="image" src="/assets/teadark.jpg">
+								<img class="image" src="<%= image_path('teadark.jpg')%>">
 								<span class="what3">Peter's Books & Tea Cafe</span>
 						</div>
 				
@@ -177,8 +161,9 @@
 				
 						<div class="col-12 socialicons">
 							<!-- <div class="panel"> -->
-								<img class="social" src="/assets/twitter.png">
-								<img class="social" src="/assets/facebook.png">
+								<a href="">
+								<img class="social" src="<%= image_path('twitter.png')%>">
+								<img class="social" src="<%= image_path('facebook.png')%>">
 								<div class="row row-table row-full-height">
 									<div class="panel-body">
 										<!-- <span class="what">Lakeside</span> -->
@@ -196,5 +181,16 @@
 	</div>
 
 
-</body>
-</html>
+
+
+<script>
+	var frm = "form.time_form";
+
+$(frm).on("submit", function(e){
+	if($('input[name="days"]').val() == "" && $('input[name="hours"]').val() == "" && $('input[name="minutes"]').val() == ""){
+		e.preventDefault()
+		alert("Please put in a time");	
+	}
+});
+</script>
+

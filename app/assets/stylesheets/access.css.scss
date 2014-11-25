@@ -24,6 +24,10 @@ label {
 	font-weight: normal;
 }
 
+.center input {
+	color: black;
+}
+
 .formpic {
 	position: absolute;
 	background-image: url(fourcanoes.jpg);
@@ -49,6 +53,8 @@ label {
 	position: relative;
 	top: 130px;
 }
+
+
 .signuplog-form a {
 	color: white;
 	font-size: 16px;
@@ -72,6 +78,18 @@ label {
 	padding: 5px 9px 5px 9px;
 	margin-top: 10px;
 }
+
+.center-button {
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color:white;
+}
+
+#user_description {
+	color: black;
+}
+
 .btn-clear:hover {
 	color: white;
 	background-color: rgba(0,0,0,.2)
