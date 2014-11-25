@@ -2,14 +2,11 @@
 <!-- <p class="center-title">Signup</p> -->
 <div class="formpic">
 
+
 	<%= render 'layouts/header' %>
 	<div class="signup-box">
-		<div class="signuplog-form">
-			<% if @user.errors.any? %>
-  		<% @user.errors.full_messages.each do |error| %>
-    		<p class = "text-danger"><%= error %></p>
-  		<% end %>
-		<% end %>
+		<div class=" container signuplog-form">
+
 
 		<%= form_for(@user, url: signup_path) do |f|%>
 

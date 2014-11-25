@@ -152,6 +152,44 @@ $(document).ready(function() {
 
 									<button class="btn curate btn-default" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
 
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"  aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Curate</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <form id="loginForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Username</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="username" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-5 col-sm-offset-3">
+                            <button type="submit" class="btn btn-default">Submit!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 								<div class="row row-table row-full-height">
 									<div class="panel-body">
 									</div>
@@ -189,8 +227,11 @@ $(document).ready(function() {
 	</div>
 
 		</div>
-			</div>
+			</div>	
 
+
+		<script type="text/javascript">
+=======
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -269,6 +310,7 @@ $(document).ready(function() {
 
 
 <script type="text/javascript">
+>>>>>>> 513021b9faeb395820b1549355285c55b72574ec
 
 		function showonlyone(thechosenone) {
      $('.newboxes').each(function(index) {
