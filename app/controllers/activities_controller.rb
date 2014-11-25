@@ -10,7 +10,7 @@ class ActivitiesController < ApplicationController
 
   def index
     if params["days"] =~ %r/[^0-9]/ || params["hours"] =~ %r/[^0-9]/ || params["minutes"] =~ %r/[^0-9]/
-      flash["failure"]= "Yo, numbers only, plis"
+      flash["failure"]= "Yo, numbers only, pls"
       redirect_to home_path
       return
     end
@@ -28,6 +28,10 @@ class ActivitiesController < ApplicationController
       redirect_to home_path
     end
   	@activity_list = Activity.fun_activities_with_user(Activity.convert_to_minutes(params["days"], params["hours"], params["minutes"]))
+    if @activity_list.length == 0
+      flash["failure"] = "No results were returned."
+      redirect_to home_path
+    end
   end
 
   def create
@@ -38,7 +42,6 @@ class ActivitiesController < ApplicationController
 		else
 			redirect_to '/login'
 		end
-  	redirect_to :back
   end
 
   def favorite
@@ -60,6 +63,7 @@ class ActivitiesController < ApplicationController
 
   def show
   	@activity = Activity.find params[:id]
+  	@filtered_activities_by_time = Activity.find([15,16])
   end
 
 

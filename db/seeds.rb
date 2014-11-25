@@ -14,7 +14,7 @@
 	Activity.create(
 		title: "eating some #{Faker::Food.meat}",
 		description: hipster_words.join,
-		location: "SF",
+		location: "San Francisco, USA",
 		time_min: rand(30..60),
 		time_max: rand(120..480),
 		img_url: 'http://lorempixel.com/1000/700/'
