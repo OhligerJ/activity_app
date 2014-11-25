@@ -17,7 +17,7 @@
 					</li>
 					<% else %>
 					<li id="login" class="pull-left"> 
-						<a href="/users/profile" class="indexpage">Profile</a>
+						<a href="/users/<%= @current_user.id %>/profile" class="indexpage">Profile</a>
 					</li>
 					<li id="login" class="pull-left"> 
 						<a href="/logout" class="indexpage">Logout</a>
