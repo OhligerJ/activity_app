@@ -167,6 +167,7 @@ $(document).ready(function() {
 
 									<button class="btn curate btn-default" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
 
+
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -202,7 +203,6 @@ $(document).ready(function() {
         </div>
     </div>
 </div>
-
 
 
 								<div class="row row-table row-full-height">
@@ -242,14 +242,90 @@ $(document).ready(function() {
 	</div>
 
 		</div>
-			</div>
-
-	
-
-
+			</div>	
 
 
 		<script type="text/javascript">
+=======
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"  aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Curate</h4>
+            </div>
+
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <!-- <form id="loginForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Username</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="username" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-5 col-sm-offset-3">
+                            <button type="submit" class="btn btn-default">Submit!</button>
+                        </div>
+                    </div>
+                </form> -->
+                <%= form_for(@new_activity) do |f|%>
+									<div>
+									  <%= f.label(:title, class: "control-label") %>
+									  <%= f.text_field(:title, autofocus: true, class: "form-control") %>
+									</div>
+
+									<div>
+									  <%= f.label(:location, class: "control-label") %>
+									  <%= f.text_field(:location, autofocus: true, class: "form-control") %>
+									</div>
+
+									<div>
+									  <%= f.label(:time_min, class: "control-label") %>
+									  <%= f.text_field(:time_min, autofocus: true, class: "form-control") %>
+									</div>
+
+									<div>
+									  <%= f.label(:time_max, class: "control-label") %>
+									  <%= f.text_field(:time_max, autofocus: true, class: "form-control") %>
+									</div>
+
+									<div>
+									  <%= f.label(:description, class: "control-label") %>
+									  <%= f.text_field(:description, autofocus: true, class: "form-control") %>
+									</div>
+
+									<div>
+									  <%= f.label(:star_rating,  class: "control-label") %>
+									  <%= f.text_field(:star_rating,  class: "form-control") %>
+									</div>
+									<br>
+
+									<div>
+									  <%= f.label(:img_url,  class: "control-label") %>
+									  <%= f.uploadcare_field :img_url, class: "form-control" %>
+									</div>
+									<br>
+
+									<%= f.submit("Add a new activity!", class: "btn btn-lg btn-info") %>
+								<% end %>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+>>>>>>> 513021b9faeb395820b1549355285c55b72574ec
 
 		function showonlyone(thechosenone) {
      $('.newboxes').each(function(index) {

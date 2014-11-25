@@ -382,4 +382,8 @@ div.flash {
     font-size:22px;
     padding-top:15px;
     letter-spacing: 0.09em;
+    position: relative;
+    z-index: 100;
+    color: #CCC;
+    // border-bottom: 1px solid gray;
 }

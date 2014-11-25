@@ -62,17 +62,17 @@ class AccessController < ApplicationController
     if params[:username].present? && params[:password].present?
       found_user = User.where(username: params[:username]).first
       if found_user
-        binding.pry
+        # binding.pry
         authorized_user = found_user.authenticate(params[:password])
       end
     end
 
     if !found_user
-      flash.now[:failure] = "Invalid username"
+      flash.now[:alert] = "Invalid username"
       render :login
 
     elsif !authorized_user
-      flash.now[:failure] = "Invalid password"
+      flash[:alert] = "Invalid password"
       render :login
 
     else
