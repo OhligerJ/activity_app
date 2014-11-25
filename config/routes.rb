@@ -6,8 +6,10 @@ Rails.application.routes.draw do
 
   get 'activities/index'
 
-  root 'home#index', as: 'home'
-  get 'home/index'
+  post 'activities/favorite', to: 'activities#favorite', as: 'favorite_activity'
+
+  root 'home#index'
+  get 'home/index', as: 'home'
 
   get 'access/forgot_password'
 
