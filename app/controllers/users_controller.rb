@@ -11,11 +11,11 @@ class UsersController < ApplicationController
   def create_activity
   	if session[:user_id] 
 	  	@current_user = User.find session[:user_id] 
-			@current_user.activities.create(activity_params)
-      redirect_to home_path
-		else
-			redirect_to '/login'
-		end
+		@current_user.activities.create(activity_params)
+ 		redirect_to :back
+	else
+		redirect_to '/login'
+	end
   end
 
   private
