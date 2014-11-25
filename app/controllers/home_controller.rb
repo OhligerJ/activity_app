@@ -2,8 +2,6 @@ class HomeController < ApplicationController
   def index
   	if session[:user_id] 
 	  	@current_user = User.find session[:user_id] 
-  	else 
-  		redirect_to '/login'
   	end
   end
 

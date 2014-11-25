@@ -15,7 +15,7 @@
 					<li id="login" class="pull-left"> 
 						<a href="/login" class="indexpage">Login</a>
 					</li>
-					<% else %>
+					<% elsif @current_user %>
 					<li id="login" class="pull-left"> 
 						<a href="/users/<%= @current_user.id %>/profile" class="indexpage">Profile</a>
 					</li>

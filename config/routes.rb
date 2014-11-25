@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'users/:user_id/profile', to: 'users#profile'
+  root 'home#index'
+  get 'home/index', as: 'home'
+
+  get 'users/:user_id/profile', to: 'users#profile', as: 'profile'
 
   post 'users/:user_id/profile', to: 'users#create_activity'
 
@@ -9,9 +12,6 @@ Rails.application.routes.draw do
   get 'activities/index'
 
   post 'activities/favorite', to: 'activities#favorite', as: 'favorite_activity'
-
-  root 'home#index'
-  get 'home/index', as: 'home'
 
   get 'access/forgot_password'
 
