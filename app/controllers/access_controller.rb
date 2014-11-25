@@ -1,5 +1,5 @@
 class AccessController < ApplicationController
-  before_action :confirm_logged_in, only: [:home]
+  before_action :confirm_logged_in, only: [:profile]
   before_action :prevent_login_signup, only: [:signup, :login]
 
   def reset_password
@@ -62,7 +62,6 @@ class AccessController < ApplicationController
     if params[:username].present? && params[:password].present?
       found_user = User.where(username: params[:username]).first
       if found_user
-        # binding.pry
         authorized_user = found_user.authenticate(params[:password])
       end
     end
