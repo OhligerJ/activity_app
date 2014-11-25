@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'home/index', as: 'home'
 
-  get 'users/:user_id/profile', to: 'users#profile', as: 'profile'
+  get 'users/profile', to: 'users#profile', as: 'profile'
 
-  post 'users/:user_id/profile', to: 'users#create_activity'
+  post 'users/profile', to: 'users#create_activity'
 
   get 'activities/new'
 

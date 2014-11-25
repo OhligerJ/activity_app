@@ -60,12 +60,12 @@
     position: absolute;
     top: 300px;
     width: 30px;
-    height: 30px;
+    height: 40px;
     text-align: center;
     color: black;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
-    font: 64px/67px 'Quicksand', sans-serif;
+    font: 68px/70px 'Quicksand', sans-serif;
     z-index: 2000px;
 }
 
@@ -160,6 +160,7 @@
     text-align: center;
     font-size: 24px;
     margin-bottom:10px; 
+
 }
 .location {
     text-align: center;
@@ -195,11 +196,43 @@
 #sign_up-carousel a {
     color: black;
 }
-// .share-buttons {
-//     position: relative;
-//     display: inline-block;
+img#heart-icon {
+    height: 25px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.fb-share-button {
+    margin: 10px 10px 10px 10px;
+}
+a.twitter-share-button,
+a.twitter-mention-button,
+a.twitter-hashtag-button {
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat;
+  background: url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat,
+              -webkit-linear-gradient(#fff, #dedede);
+  background: url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat,
+              linear-gradient(#fff, #dedede);
+  background-size: 16px 13px, auto auto;
+ 
+  /* Text */
+    font: bold 11px/17px Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  white-space: nowrap;
+}
+
+ 
+// /* Color Highlight for keyboard navigation */
+// a.twitter-share-button:focus,
+// a.twitter-mention-button:focus,
+// a.twitter-hashtag-button:focus {
+//   outline: none;
+//   border-color: #0089cb;
 // }
-// .favorite-buttons{
-//     width:10px;
-//     background-image: url(clock.png);
-// }
+

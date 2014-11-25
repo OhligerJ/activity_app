@@ -47,3 +47,4 @@ Activity.create(
 		time_max: rand(120..480),
 		img_url: 'http://fuzzco.com/wp-content/uploads/2013/07/honey.jpg'
 	)
+
