@@ -42,7 +42,6 @@ class ActivitiesController < ApplicationController
 		else
 			redirect_to '/login'
 		end
-  	redirect_to :back
   end
 
   def favorite

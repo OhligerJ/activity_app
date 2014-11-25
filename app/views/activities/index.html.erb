@@ -1,3 +1,4 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 <div id= "header-carousel" class="page-container bored-header clearfix shift-with-hiw">
 	<a href="/" id="logo-carousel" class="header-logo pull-left"><img src="/assets/clockblack.png"></a>
@@ -26,50 +27,59 @@
 
 		      <% for activity in @activity_list %>
 		        
-		      <li>
-		      <div class="act-container">
-					 <% if activity.img_url != nil %>	
-					 <div class="activity-img">
-					 <%= image_tag(activity.img_url) %>
-					</div>
-					<% end %>
+			      <li>
+				      <div class="act-container">
+							  <% if activity.img_url != nil %>	
+								  <div class="activity-img">
+									  <%= image_tag(activity.img_url) %>
+									</div>
+								<% end %>
 
-					<% if activity.title != nil %>
-					<div class="act-desc col-3">
-						<div class="title"><%= activity.title %></div>
-					<% end %>
+								<div class="act-desc col-3">
+									<% if activity.title != nil %>
+										<div class="title"><%= activity.title %></div>
+									<% end %>
 
-					<% if activity.location != nil %>
-						<div class="location"><%= activity.location %></div>
-					<% end %>
-					<br>
+									<% if activity.location != nil %>
+										<div class="location"><%= activity.location %></div>
+									<% end %>
+									<br>
 
-					<% if activity.description != nil %>
-						<div class="description"><%= activity.description %></div>
-					<% end %>
-					<br>
+									<% if activity.description != nil %>
+										<div class="description"><%= activity.description %></div>
+									<% end %>
+									<br>
 
-					<% if activity.time_min != nil and activity.time_max != nil %>
-						<div class="time-range">Estimated Time: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
-					<% else %>
-						<div class="time-range">Time: <%= activity_list.time_min %> minutes</div>
-					<% end %>
-					<br>
-					<div class="share-buttons">
-						<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
-						<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
-					
-						<% if session[:user_id] %>
+									<% if activity.time_min != nil and activity.time_max != nil %>
+										<div class="time-range">Estimated Time: <%= activity.time_min %> to <%= activity.time_max %> minutes </div>
+									<% else %>
+										<div class="time-range">Time: <%= activity_list.time_min %> minutes</div>
+									<% end %>
 
-						<%= link_to('Favorite', favorite_activity_path(activity_id: activity.id, type: "favorite"), :method => :post ) %>
+									<% if activity.location != nil %>
+										<div class="time-range"  id="distance<%= activity.id %>">distance </div>
+										<div class="time-range" id="walking<%= activity.id %>">walking </div>
+								    <div class="time-range" id="biking<%= activity.id %>">biking </div>
+								    <div class="time-range" id="driving<%= activity.id %>">driving </div>
+								    <div class="time-range" id="message"> </div>
+									<% end %>
+									<br>
 
-						<% end %> 
-					</div> <!-- end share buttons -->
-					</div> <!-- end description div -->
-					</div><!--  end act container -->
+									<div class="share-buttons">
+										<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
+										<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
+									
+										<% if session[:user_id] %>
 
-					</li>
-		        <% end %>
+										<%= link_to('Favorite', favorite_activity_path(activity_id: activity.id, type: "favorite"), :method => :post ) %>
+
+										<% end %> 
+									</div> <!-- end share buttons -->
+								</div> <!-- end act-desc div -->
+							</div><!--  end act container -->
+
+						</li>
+	        <% end %>
 		    </ul>
 
 		</div> <!-- end jcarousel -->
@@ -85,3 +95,147 @@
 	</div>	
 </div>
 
+<script>
+var distance_settings;
+var x = document.getElementById("message");
+
+<% @activity_list.each do |activity| %>
+  var distance<%= activity.id %> = document.getElementById('distance<%= activity.id %>');
+  var walking<%= activity.id %> = document.getElementById('walking<%= activity.id %>');
+  var biking<%= activity.id %> = document.getElementById('biking<%= activity.id %>');
+  var driving<%= activity.id %> = document.getElementById('driving<%= activity.id %>');
+<% end %>
+
+
+var destinations = [];
+<% @activity_list.each do |activity| %>
+  destinations.push("<%= activity.location %>");
+<% end %>
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+  var origin = new google.maps.LatLng(lat, lon);
+
+  distance_settings = {
+    origins: [origin],
+    destinations: destinations,
+    travelMode: google.maps.TravelMode.WALKING,
+    unitSystem: google.maps.UnitSystem.IMPERIAL
+  };
+
+  var service1 = new google.maps.DistanceMatrixService();
+  service1.getDistanceMatrix(distance_settings, callback1);
+}
+
+function callback1(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+    
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    
+    // there is only one row because there is only one origin  
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      var j = 0;
+      <% @activity_list.each do |activity| %>
+        distance<%= activity.id %>.innerHTML = "distance: " + results[j].distance.text;
+        walking<%= activity.id %>.innerHTML = "walking: " + results[j].duration.text;
+        j++;
+      <% end %>
+    }
+  }
+
+  var service2 = new google.maps.DistanceMatrixService();
+  distance_settings.travelMode = google.maps.TravelMode.BICYCLING;
+  service2.getDistanceMatrix(distance_settings, callback2);
+}
+
+
+function callback2(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+    
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    
+    // there is only one row because there is only one origin  
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      var j = 0;
+      <% @activity_list.each do |activity| %>
+        biking<%= activity.id %>.innerHTML = "biking: " + results[j].duration.text;
+        j++;
+      <% end %>
+    }
+  }
+
+  var service3 = new google.maps.DistanceMatrixService();
+  distance_settings.travelMode = google.maps.TravelMode.DRIVING;
+  service3.getDistanceMatrix(distance_settings, callback3);
+}
+
+function callback3(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+    
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    
+    // there is only one row because there is only one origin  
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      var j = 0;
+      <% @activity_list.each do |activity| %>
+        driving<%= activity.id %>.innerHTML = "driving: " + results[j].duration.text;
+        j++;
+      <% end %>
+    }
+  }
+}
+
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+
+getLocation();
+
+</script>

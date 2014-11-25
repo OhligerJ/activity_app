@@ -1,26 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <style>
-      .gif1 {
-        height: 150px;
-        width: 150px;
-      }
-    </style>
-</head>
-<body>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 
 <p>Click the button to get your coordinates.</p>
 <button onclick="getLocation()">Try It</button>
 
-<p id="demo"> </p>
+<p id="message"> </p>
 <br>
-<div id="outputDiv">
+<!-- <div id="outputDiv">
   <p>calculating distance and commuting time...</p> 
   <img class="gif1" src="../../assets/gallery_loader.gif" alt="load spinner gif"> 
-</div>
+</div> -->
 
 <% @filtered_activities_by_time.each do |a| %>
   <div id="output_activity<%= a.id %>">
@@ -38,7 +28,7 @@
 
 
 <script>
-var x = document.getElementById("demo");
+ var x = document.getElementById("message");
 
 <% @filtered_activities_by_time.each do |a| %>
   var output_activity<%= a.id %> = document.getElementById('output_activity<%= a.id %>');
@@ -70,20 +60,9 @@ function getLocation() {
 function showPosition(position) {
   var lat = position.coords.latitude;
   var lon = position.coords.longitude;
-  x.innerHTML = "Latitude: " + lat + 
-  "<br>Longitude: " + lon; 
+  // x.innerHTML = "Latitude: " + lat + 
+  // "<br>Longitude: " + lon; 
   var origin = new google.maps.LatLng(lat, lon);
-
-  
-            // var service = new google.maps.DistanceMatrixService();
-            // var distance_settings = {
-            //     origins: [origin],
-            //     destinations: destinations,
-            //     travelMode: google.maps.TravelMode.DRIVING,
-            //     unitSystem: google.maps.UnitSystem.IMPERIAL
-            //   };
-            
-            // service.getDistanceMatrix(distance_settings, callback);
 
   distance_settings = {
     origins: [origin],
@@ -147,7 +126,7 @@ function callback2(response, status) {
       var j = 0;
       <% @filtered_activities_by_time.each do |a| %>
         biking<%= a.id %>.innerHTML = "biking: " + results[j].duration.text;
-        console.log(results[j].duration.text);
+        // console.log(results[j].duration.text);
         j++;
       <% end %>
     }
@@ -183,37 +162,6 @@ function callback3(response, status) {
 }
 
 
-
-function callback(response, status) {
-  if (status != google.maps.DistanceMatrixStatus.OK) {
-    alert('Error was: ' + status);
-  } else {
-
-    var origins = response.originAddresses;
-    // console.log(origins[0]); return the calculated address for that location
-    var destinations = response.destinationAddresses;
-    // console.log(destinations[0]); return the calculated address for that location
-    var outputDiv = document.getElementById('outputDiv');
-    outputDiv.innerHTML = '';
-
-    // there is only one row because there is only one origin      
-    var results = response.rows[0].elements;
-
-    for (var i = 0; i < origins.length; i++) {
-      var results = response.rows[i].elements;
-
-      for (var j = 0; j < results.length; j++) {
-
-        outputDiv.innerHTML += 
-              'origin: ' + origins[i] + ' (user location)<br>'
-            + 'destination: ' + destinations[j] + ' (activity'+ (j+1) +' location)<br>'
-            + 'distance = ' + results[j].distance.text + '<br>'
-            + 'duration =  ' + results[j].duration.text + '<br><br>';
-      }
-    }
-  }
-}
-
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
@@ -232,7 +180,5 @@ function showError(error) {
 }
 </script>
 
-</body>
-</html>
 
 
