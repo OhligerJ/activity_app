@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "blessed_repo+info@gmail.com"
+  default from: "no-reply@activelife.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
