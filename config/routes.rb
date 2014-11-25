@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'users/profile'
+  get 'users/:user_id/profile', to: 'users#profile'
+
+  post 'users/:user_id/profile', to: 'users#create_activity'
 
   get 'activities/new'
 
@@ -34,6 +36,7 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :activities
+    # resources :profile
   end
 
   resources :activities

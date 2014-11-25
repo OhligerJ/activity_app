@@ -42,7 +42,6 @@ class ActivitiesController < ApplicationController
 		else
 			redirect_to '/login'
 		end
-  	redirect_to :back
   end
 
   def favorite
@@ -64,6 +63,7 @@ class ActivitiesController < ApplicationController
 
   def show
   	@activity = Activity.find params[:id]
+  	@filtered_activities_by_time = Activity.find([15,16])
   end
 
 
