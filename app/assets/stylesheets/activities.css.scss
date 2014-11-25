@@ -3,67 +3,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// body {
-//     background: #F0EFE7;
-//     margin: 0;
-//     padding: 0;
-//     font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//     color: #4E443C;
-//     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-// }
-
-    // h1, h2, h3, h4, h5, h6 {
-    //   font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    //   text-align: center;
-    //   font-weight: normal;
-    //   text-rendering: optimizelegibility;
-    // }
-
-    // h1 {
-    //     color: #4E443C;
-    //     font-size: 36px;
-    //     font-weight: bold;
-    // }
-
-    // h2, h2 a {
-    //     color: #F14E32;
-    // }
-
-    // h3, h3 a {
-    //   color: #0388A6;
-    // }
-
-    // a {
-    //   color: #0388A6;
-    // }
-
-pre {
-  border:1px solid #000;
-  overflow-x:auto;
-  // background: #222;
-  color: #fff;
-  text-shadow: none;
-}
 
 .wrapper {
-    max-width: 1000px;
-    padding: 0 20px 40px 20px;
+    max-width: 1200px;
     margin: auto;
 }
 
-
 .jcarousel-wrapper {
-    margin: 20px auto;
+    margin: 5px auto;
     position: relative;
     border: 1px solid #fff;
-    // -webkit-border-radius: 1px;
-    //    -moz-border-radius: 1px;
-    //         border-radius: 1px;
-    // -webkit-box-shadow: 0 0 2px #999;
-    //    -moz-box-shadow: 0 0 2px #999;
-    //         box-shadow: 0 0 2px #999;
 }
-
 
 .jcarousel-wrapper .photo-credits {
     position: absolute;
@@ -89,7 +39,7 @@ pre {
 }
 
 .jcarousel ul {
-    width: 20000em;
+    width: 21000em;
     position: relative;
     list-style: none;
     margin: 0;
@@ -99,10 +49,8 @@ pre {
 .jcarousel li {
     position: relative;
     float: left;
-    width: 1000px;
-    height:800px;
-    // padding: 5px;
-    // display: inline-block;
+    width: 1200px;
+    height: 700px;
 }
 
 /** Carousel Controls **/
@@ -110,16 +58,15 @@ pre {
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 200px;
+    top: 300px;
     width: 30px;
     height: 30px;
     text-align: center;
-    // background: #4E443C;
     color: black;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
     font: 64px/67px 'Quicksand', sans-serif;
-
+    z-index: 2000px;
 }
 
 .jcarousel-control-prev {
@@ -192,19 +139,20 @@ pre {
     position: absolute;
     width: 100%;
     height: 100%;
-    // float: left;
     z-index: -1;
 }
+
+
 .act-desc {
     position: absolute;
     width: 33%;
     height: 100%;
-    background-color: rgba(30,30,30,.9);
+    background-color: rgba(255,255,255,1);
     font-family: 'Quicksand', sans-serif;
-    padding: 25px;
+    padding: 35px;
     margin-left: 60%;
     z-index: 1000px;
-    color:white;
+    color:black;
 }
 
 .title {
@@ -222,11 +170,34 @@ pre {
 .time-range {
     text-align: center;
 }
+#header-carousel {
+    background-color: white;
+    line-height: 10px;
+    z-index: 1000;
+    top:30px;
+    width: 100%;
+    top:0px;
+    position: relative;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+
+}
+#logo-carousel {
+    padding-top: 6px;
+}
+
+#login-carousel a {
+    color: black;
+}
+
+#sign_up-carousel a {
+    color: black;
+}
+// .share-buttons {
+//     position: relative;
+//     display: inline-block;
+// }
 // .favorite-buttons{
 //     width:10px;
 //     background-image: url(clock.png);
 // }
-// .twitter-share-button {
-//     background-image: url(1416829212_43-twitter-128.png)
-// }
-

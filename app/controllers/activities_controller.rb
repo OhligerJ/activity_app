@@ -48,7 +48,11 @@ class ActivitiesController < ApplicationController
   def favorite
     type = params[:type]
     if type == "favorite"
-      @current_user.favorites << @activity
+      @current_user = User.find session[:user_id]
+      favorite = @current_user.favorites.new
+      favorite.activity_id = params[:activity_id]
+      favorite.user_id = session[:user_id] 
+      favorite.save
       redirect_to :back, notice: 'You favorited #{@activity.title}'
     else
       # Type missing, nothing happens
