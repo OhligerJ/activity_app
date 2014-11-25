@@ -13,8 +13,8 @@ class Activity < ActiveRecord::Base
   	fun_activities time
   end
 
-  def self.convert_to_minutes minutes, hours, days
-    return minutes.to_i + (hours.to_i * 60) + (days.to_i * 24 * 60)
+  def self.convert_to_minutes days, hours, minutes
+    return (days.to_i * 24 * 60) + (hours.to_i * 60) + minutes.to_i
   end
 
   private

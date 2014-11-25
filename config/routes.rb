@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   get 'activities/index'
 
-  root 'home#index'
-  get 'home/index', as: 'home'
+  root 'home#index', as: 'home'
+  get 'home/index'
 
   get 'access/forgot_password'
 
