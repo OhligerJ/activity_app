@@ -23,7 +23,7 @@
 
 Activity.create(
 		title: "Beekeeping at Holland Farms",
-		description: "lorempixel",
+		description: "This is the activity description which will provide the user with information about the activity itself, as well different aspects of it would be exciting.",
 		location: "San Francisco, USA",
 		time_min: rand(30..60),
 		time_max: rand(120..480),
@@ -32,7 +32,7 @@ Activity.create(
 
 	Activity.create(
 		title: "Beekeeping at Holland Farms",
-		description: "lorempixel",
+		description: "This is the activity description which will provide the user with information about the activity itself, as well different aspects of it would be exciting.",
 		location: "San Francisco, USA",
 		time_min: rand(30..60),
 		time_max: rand(120..480),
@@ -41,7 +41,7 @@ Activity.create(
 
 	Activity.create(
 		title: "Beekeeping at Holland Farms",
-		description: "lorempixel",
+		description: "This is the activity description which will provide the user with information about the activity itself, as well different aspects of it would be exciting.",
 		location: "San Francisco, USA",
 		time_min: rand(30..60),
 		time_max: rand(120..480),

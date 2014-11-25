@@ -150,21 +150,23 @@
     background-color: rgba(255,255,255,1);
     font-family: 'Quicksand', sans-serif;
     padding: 35px;
-    margin-left: 60%;
+    margin-left: 63%;
     z-index: 1000px;
     color:black;
+    text-align:center;
 }
 
 .title {
     text-align: center;
     font-size: 24px;
+    margin-bottom:10px; 
 }
 .location {
     text-align: center;
     font-size: 14px;
 }
 .description {
-    text-align: justify;
+    text-align: center;
     font-size: 14px;
 }
 .time-range {
@@ -174,7 +176,7 @@
     background-color: white;
     line-height: 10px;
     z-index: 1000;
-    top:20px;
+    padding:20px;
     width: 100%;
     // top:0px;
     position: relative;
