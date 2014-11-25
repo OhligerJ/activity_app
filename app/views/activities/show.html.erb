@@ -1,47 +1,63 @@
-<!-- mix index index2 -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Get Geolocation and calculates distance to a destination</title>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <style>
       .gif1 {
-        height: 180px;
-        width: 180px;
+        height: 150px;
+        width: 150px;
       }
     </style>
 </head>
 <body>
 
+
 <p>Click the button to get your coordinates.</p>
-
-<div>title: <%= @activity.title %></div>
-<div>location: <%= @activity.location %></div>
-<div>time_min: <%= @activity.time_min %></div>
-<div>time_max: <%= @activity.time_max %></div>
-<div>description: <%= @activity.description %></div>
-<div>api_url: <%= @activity.api_url %></div>
-<div>star_rating: <%= @activity.star_rating %></div>
-<div>user_id: <%= @activity.user_id %></div>
-<div>img_url: <%= @activity.img_url %></div>
-<div><img src="<%= @activity.img_url %>-/resize/300x/ ">  </div>
-
 <button onclick="getLocation()">Try It</button>
 
-<p id="demo"></p>
+<p id="demo"> </p>
 <br>
-<div id="outputDiv"><p>calculating distance and commuting time...</p> <img class="gif1" src="../../assets/gallery_loader.gif" alt="load spinner gif"> </div>
+<div id="outputDiv">
+  <p>calculating distance and commuting time...</p> 
+  <img class="gif1" src="../../assets/gallery_loader.gif" alt="load spinner gif"> 
+</div>
+
+<% @filtered_activities_by_time.each do |a| %>
+  <div id="output_activity<%= a.id %>">
+    <p id="origin<%= a.id %>"> </p>
+    <p id="destination<%= a.id %>"> </p>
+    <p id="distance<%= a.id %>"> </p>
+    <p id="time_text"> </p>
+    <p id="walking<%= a.id %>"> </p>
+    <p id="biking<%= a.id %>"> </p>
+    <p id="driving<%= a.id %>"> </p>
+  </div>
+  <br>
+<% end %>
+
+
 
 <script>
 var x = document.getElementById("demo");
 
-var origin1; // = new google.maps.LatLng(37.751578, -122.447838);
-var destinationA = "<%= @activity.location %>";
+<% @filtered_activities_by_time.each do |a| %>
+  var output_activity<%= a.id %> = document.getElementById('output_activity<%= a.id %>');
+  var origin<%= a.id %> = document.getElementById('origin<%= a.id %>');
+  var destination<%= a.id %> = document.getElementById('destination<%= a.id %>');
+  var distance<%= a.id %> = document.getElementById('distance<%= a.id %>');
+  var time_text = document.getElementById('time_text');
+  var walking<%= a.id %> = document.getElementById('walking<%= a.id %>');
+  var biking<%= a.id %> = document.getElementById('biking<%= a.id %>');
+  var driving<%= a.id %> = document.getElementById('driving<%= a.id %>');
+  
+<% end %>
+var distance_settings;
+// var origin;
 
-// var destinations = [];
-// <!--%= @filtered_activities_by_time.each do |a| %-->
-//   destinations.push("<!--%= a.location %-->");
-// <!--% end %-->
+var destinations = [];
+<% @filtered_activities_by_time.each do |a| %>
+  destinations.push("<%= a.location %>");
+<% end %>
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -56,50 +72,146 @@ function showPosition(position) {
   var lon = position.coords.longitude;
   x.innerHTML = "Latitude: " + lat + 
   "<br>Longitude: " + lon; 
-  origin1 = new google.maps.LatLng(lat, lon);
+  var origin = new google.maps.LatLng(lat, lon);
 
-  var service = new google.maps.DistanceMatrixService();
-    service.getDistanceMatrix(
-      {
-        // origins: [origin1, origin2],
-        origins: [origin1],
-        // destinations: [destinationA, destinationB],
-        destinations: [destinationA],
-        // travelMode: google.maps.TravelMode.WALKING,
-        // travelMode: google.maps.TravelMode.BICYCLING, 
-        travelMode: google.maps.TravelMode.DRIVING,
-        // unitSystem: google.maps.UnitSystem.METRIC,
-        unitSystem: google.maps.UnitSystem.IMPERIAL,
-        // avoidHighways: false,
-        // avoidTolls: false
-      }, callback);
+  
+            // var service = new google.maps.DistanceMatrixService();
+            // var distance_settings = {
+            //     origins: [origin],
+            //     destinations: destinations,
+            //     travelMode: google.maps.TravelMode.DRIVING,
+            //     unitSystem: google.maps.UnitSystem.IMPERIAL
+            //   };
+            
+            // service.getDistanceMatrix(distance_settings, callback);
 
-  function callback(response, status) {
-    if (status != google.maps.DistanceMatrixStatus.OK) {
-      alert('Error was: ' + status);
-    } else {
-      var origins = response.originAddresses;
-      console.log(origins[0]);
-      var destinations = response.destinationAddresses;
-      console.log(destinations[0]);
-      var outputDiv = document.getElementById('outputDiv');
-      outputDiv.innerHTML = '';
-      // deleteOverlays();
+  distance_settings = {
+    origins: [origin],
+    destinations: destinations,
+    travelMode: google.maps.TravelMode.WALKING,
+    unitSystem: google.maps.UnitSystem.IMPERIAL
+  };
 
+  var service1 = new google.maps.DistanceMatrixService();
+  service1.getDistanceMatrix(distance_settings, callback1);
+}
 
-      // there is only one row because there is only one origin      
-      var results = response.rows[0].elements;
-      console.log(results);
-      console.log(results[0].distance.text);
-      console.log(results[0].distance.text);
+function callback1(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+    
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    
+    // there is only one row because there is only one origin  
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      var j = 0;
+      <% @filtered_activities_by_time.each do |a| %>
 
-      outputDiv.innerHTML += 'origin: ' + origins[0] + 
-                  '<br>destination: ' + destinations[0] + 
-                  '<br>distance = ' + results[0].distance.text + 
-                  '<br>duration =  ' + results[0].duration.text + '<br>';
+        origin<%= a.id %>.innerHTML = "origin: " + origins[i];
+        destination<%= a.id %>.innerHTML = "destination:" + destinations[j];
+        distance<%= a.id %>.innerHTML = "distance: " + results[j].distance.text;
+        time_text.innerHTML = "commuting time"
+        walking<%= a.id %>.innerHTML = "walking: " + results[j].duration.text;
+        j++;
+      <% end %>
     }
   }
 
+  var service2 = new google.maps.DistanceMatrixService();
+  distance_settings.travelMode = google.maps.TravelMode.BICYCLING;
+  service2.getDistanceMatrix(distance_settings, callback2);
+}
+
+function callback2(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+    
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    
+    // there is only one row because there is only one origin  
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      var j = 0;
+      <% @filtered_activities_by_time.each do |a| %>
+        biking<%= a.id %>.innerHTML = "biking: " + results[j].duration.text;
+        console.log(results[j].duration.text);
+        j++;
+      <% end %>
+    }
+  }
+
+  var service3 = new google.maps.DistanceMatrixService();
+  distance_settings.travelMode = google.maps.TravelMode.DRIVING;
+  service3.getDistanceMatrix(distance_settings, callback3);
+}
+
+function callback3(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+    var origins = response.originAddresses;
+    var destinations = response.destinationAddresses;
+    
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    
+    // there is only one row because there is only one origin  
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+      var j = 0;
+      <% @filtered_activities_by_time.each do |a| %>
+        driving<%= a.id %>.innerHTML = "driving: " + results[j].duration.text;
+        j++;
+      <% end %>
+    }
+  }
+}
+
+
+
+function callback(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+    alert('Error was: ' + status);
+  } else {
+
+    var origins = response.originAddresses;
+    // console.log(origins[0]); return the calculated address for that location
+    var destinations = response.destinationAddresses;
+    // console.log(destinations[0]); return the calculated address for that location
+    var outputDiv = document.getElementById('outputDiv');
+    outputDiv.innerHTML = '';
+
+    // there is only one row because there is only one origin      
+    var results = response.rows[0].elements;
+
+    for (var i = 0; i < origins.length; i++) {
+      var results = response.rows[i].elements;
+
+      for (var j = 0; j < results.length; j++) {
+
+        outputDiv.innerHTML += 
+              'origin: ' + origins[i] + ' (user location)<br>'
+            + 'destination: ' + destinations[j] + ' (activity'+ (j+1) +' location)<br>'
+            + 'distance = ' + results[j].distance.text + '<br>'
+            + 'duration =  ' + results[j].duration.text + '<br><br>';
+      }
+    }
+  }
 }
 
 function showError(error) {
