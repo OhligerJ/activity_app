@@ -12,6 +12,9 @@
 		</li>
 		<% else %>
 		<li id="login-carousel" class="pull-left"> 
+		<a href="/users/profile">Profile</a>
+		</li>
+		<li id="login-carousel" class="pull-left"> 
 			<a href="/logout">Logout</a>
 		</li>
 			<% end %>
@@ -34,8 +37,9 @@
 					</div>
 					<% end %>
 
-					<% if activity.title != nil %>
 					<div class="act-desc col-3">
+					<% if activity.title != nil %>
+					
 						<div class="title"><%= activity.title %></div>
 					<% end %>
 
@@ -55,15 +59,22 @@
 						<div class="time-range">Time: <%= activity_list.time_min %> minutes</div>
 					<% end %>
 					<br>
-					<div class="share-buttons">
-						<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>">Tweet</a>
-						<div class="fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count"></div>
-					
+					<div class="container share-buttons">
+						<div class="row">
+						<div class="col-md-1">
 						<% if session[:user_id] %>
-
-						<%= link_to('Favorite', favorite_activity_path(activity_id: activity.id, type: "favorite"), :method => :post ) %>
-
+						
+						<%= link_to('<img src="assets/heart_icon.png" id="heart-icon">'.html_safe, favorite_activity_path(activity_id: activity.id, type: "favorite"), :method => :post ) %>
+						
 						<% end %> 
+						</div>
+					<div class="col-md-1" style="padding: 9px 0">
+						<a class="twitter-share-button" href="https://twitter.com/share?url=./view/<%= activity.id %>"></a>
+					</div>
+					<div class="col-md-1 fb-share-button" data-href="./view/<%= activity.id %>" data-layout="button_count">
+					</div>
+					</div>
+
 					</div> <!-- end share buttons -->
 					</div> <!-- end description div -->
 					</div><!--  end act container -->
